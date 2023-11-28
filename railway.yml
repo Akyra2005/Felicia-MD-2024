@@ -1,0 +1,7 @@
+services:
+  - name: big-hall
+    type: worker
+    env:
+      NODE_ENV: "production"
+    buildCommand: "npm start"
+    autostart: true
