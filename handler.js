@@ -1215,7 +1215,7 @@ export async function handler(chatUpdate) {
                     m.exp += xp
                 if (!isPrems && plugin.limit && global.db.data.users[m.sender].limit < plugin.limit * 1) {
                     this.sendMessage(m.chat, {
-                        text: `*Dibutuhkan ${plugin.limit} Limit*\n\n*true = 1 Limit*`,
+                        text: `*Dibutuhkan ${plugin.limit} Limit*\nDapatkan Limit Gtatis Di *.claim*\n*Atau Beli Premium Untuk Unlimited Limit*\n*Beli Premium Di .sewa*\n\n*true = 1 Limit*`,
                         mentions: [m.sender]
                     }, {
                         quoted: m
