@@ -517,7 +517,7 @@
       "emas": 0,
       "emerald": 0,
       "esteh": 0,
-      "exp": 2356,
+      "exp": 2392,
       "expg": 0,
       "exphero": 0,
       "expired": 0,
@@ -67984,10 +67984,10 @@
   },
   "stats": {
     "misc-speed.js": {
-      "total": 26,
-      "success": 26,
-      "last": 1701437581113,
-      "lastSuccess": 1701437581113
+      "total": 27,
+      "success": 27,
+      "last": 1701439315739,
+      "lastSuccess": 1701439315739
     },
     "menu.js": {
       "total": 67,
@@ -68564,7 +68564,7 @@
       "restrict": false,
       "autorestart": true,
       "restartDB": 0,
-      "status": 1701438673051
+      "status": 1701439313186
     }
   }
 }
