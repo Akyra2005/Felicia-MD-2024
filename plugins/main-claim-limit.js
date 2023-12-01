@@ -1,41 +1,33 @@
-const rewards = {
-    limit: Math.floor(Math.random() * (40 - 10 + 1)) + 10,
-};
-const cooldown = 33320000;
-const allowedGroup = 'https://chat.whatsapp.com/E01trCuEsNM22uL4hB7ktS'; // Ganti dengan link grup yang diizinkan
+let handler = async (m, { db }) => {
+    let user = global.db.data.users[m.sender]
 
-let handler = async (m, { conn }) => {
-    let user = global.db.data.users[m.sender];
-
-    // Cek apakah pengguna berada di grup yang diizinkan
-    let isAllowedGroup = m.isGroup && m.chat === allowedGroup;
-    if (!isAllowedGroup) {
-        throw 'Maaf, Klaim Limit Hanya Dapat Dilakukan Di Grup *https://chat.whatsapp.com/E01trCuEsNM22uL4hB7ktS*';
+    // Check if the user has more than 1 limit
+    if (user.limit > 0) {
+        return m.reply(`*Kamu Masih Memiliki Limit*`)
     }
 
-    if (user.limit > 1) {
-        throw '*Anda Masih Memiliki Limit*';
+    // Check if 24 hours have passed since the last claim
+    let lastClaim = user.lastclaim || 0
+    let cooldown = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+
+    if (Date.now() - lastClaim < cooldown) {
+        return m.reply(`*Klaim Hanya Dapat Dilakukan 24 Jam Sekali*`)
     }
 
-    if (new Date() - user.lastclaim < cooldown) {
-        throw `Anda Telah Mengklaim Limit Hari Ini, Silakan Tunggu Hingga *${((user.lastclaim + cooldown) - new Date()).toTimeString()}*`;
-    }
+    // Generate a random limit between 20 and 50
+    let claimedLimit = Math.floor(Math.random() * (50 - 20 + 1)) + 20
 
-    let text = '';
-    for (let reward of Object.keys(rewards)) {
-        if (!(reward in user)) continue;
-        user[reward] += rewards[reward];
-        text += `*+${rewards[reward]} Limit 🎟️*`;
-    }
+    // Update user data
+    user.limit = claimedLimit
+    user.lastclaim = Date.now()
 
-    conn.reply(m.chat, text.trim(), m);
-    user.lastclaim = new Date() * 1;
-};
+    m.reply(`Berhasil Klaim *${claimedLimit} 🎟️ Limit*\n*Beli Premium Untuk Unlimited Limit*`)
+}
 
-handler.help = ['claimlimit'];
-handler.tags = ['main'];
-handler.command = /^(claim|gratis)$/i;
+handler.help = ['claim']
+handler.tags = ['main']
+handler.command = /^claim$/i
 
-handler.cooldown = cooldown;
+handler.group = true
 
-export default handler;
+export default handler

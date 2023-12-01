@@ -27,7 +27,7 @@ global.ppkecil = {
                 thumbnailUrl: pppkecil,
                 sourceUrl: ``,
                 mediaType: 1,
-                renderLargerThumbnail: false
+                renderLargerThumbnail: true
             }
         }
     }
