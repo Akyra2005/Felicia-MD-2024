@@ -13,7 +13,7 @@ Sumber: *Google*
 conn.sendFile(m.chat, link, 'image.jpg', caption, m)
 }
 handler.help = ['gimage <query>', 'image <query>']
-handler.tags = ['image']
+handler.tags = ['tools']
 handler.command = /^(gimage|image|img)$/i
 handler.limit = true
 export default handler

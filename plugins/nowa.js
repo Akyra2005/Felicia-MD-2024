@@ -20,7 +20,7 @@ m.reply(txt)
 
 }
 handler.help = ['nowa']
-handler.tags = ['nowa']
+handler.tags = ['tools']
 handler.command = /^nowa$/i
 handler.register = true
 export default handler

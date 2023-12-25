@@ -263,7 +263,7 @@ const rm = mt[ri];
         text: '🕒',
         key: m.key }});
         
-await conn.reply(m.chat, '...', m)
+await conn.reply(m.chat, '*Tunggu Sebentar*', m)
 await conn.sendMessage(m.chat, {
 	        video: fs.readFileSync('./media/thumb3.mp4'),
             mimetype: 'video/mp4',

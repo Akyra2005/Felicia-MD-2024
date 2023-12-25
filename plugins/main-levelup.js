@@ -32,7 +32,7 @@ ${teks}\n
 }
 
 handler.help = ['levelup']
-handler.tags = ['xp']
+handler.tags = ['rpg']
 handler.register = true
 handler.command = /^level(|up)$/i
 

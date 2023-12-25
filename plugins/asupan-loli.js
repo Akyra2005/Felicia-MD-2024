@@ -4,7 +4,7 @@ let handler = async (m, { conn, text }) => {
     conn.sendFile(m.chat, url, 'anu.mp4', '*Sukses*', m)
   }
   handler.command = /^(loli)$/i
-  handler.tags = ['sfw']
+  handler.tags = ['anime']
   handler.help = ['loli']
   handler.register = true
   handler.limit = false

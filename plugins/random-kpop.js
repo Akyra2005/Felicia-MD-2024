@@ -34,7 +34,7 @@ conn.reply(m.chat, `*Tidak Tersedia*`, m)
 
 handler.help = ['kpop'].map(v => v + ' <query>')
 
-handler.tags = ['image']
+handler.tags = ['internet']
 
 handler.command = /^(kpop)$/i
 handler.register = true

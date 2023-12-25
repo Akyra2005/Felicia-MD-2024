@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     await apivisit
 }
 handler.help = ['tomp3']
-handler.tags = ['general']
+handler.tags = ['tools']
 handler.alias = ['tomp3', 'toaudio']
 handler.command = /^to(mp3|audio)$/i
 handler.register = true

@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   
 }
 handler.help = ['wallpapers','wp']
-handler.tags = ['img']
+handler.tags = ['tools']
 handler.command = ['wallpapers', 'wp']
 handler.diamond = true
 handler.register = true

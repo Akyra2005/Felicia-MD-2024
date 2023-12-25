@@ -29,7 +29,7 @@ ${effects.map(effect => `_> ${effect}_`).join('\n')}
 }
 
 handler.help = ['filter']
-handler.tags = ['img']
+handler.tags = ['internet']
 handler.command = /^(filter)$/i
 handler.register = true
 handler.limit = true

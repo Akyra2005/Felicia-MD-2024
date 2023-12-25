@@ -37,7 +37,7 @@ Ditonton: *${v.views}*`
   }
 }
 handler.help = ['playlist *<teks>*'];
-handler.tags = ['search'];
+handler.tags = ['downloader'];
 handler.command = /^playlist|playlist2$/i;
 handler.register = true
 handler.limit = true

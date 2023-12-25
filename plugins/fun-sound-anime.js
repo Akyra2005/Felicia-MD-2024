@@ -80,7 +80,7 @@ const handler = async (m, { conn, usedPrefix, text, command }) => {
 
 handler.help = ['voice'];
 handler.command = ['voice'];
-handler.tags = ['music'];
+handler.tags = ['internet'];
 handler.register = true
 export default handler;
 

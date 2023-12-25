@@ -5,7 +5,7 @@ let f = await api.Cerpen(text)
 m.reply(f)
 }
 handler.help = ['cerpen']
-handler.tags = ['cerpen']
+handler.tags = ['internet']
 handler.command = /^(cerpen)$/i;
 handler.register = true
 export default handler;

@@ -49,7 +49,7 @@ conn.sendFile(m.chat, avatar_url, 'github-stalk.png', teks, m)
 
 }
 handler.help = ['githubstalk']
-handler.tags = ['stalk']
+handler.tags = ['internet']
 handler.command = /^(githubstalk)$/i
 handler.limit = true
 handler.register = true

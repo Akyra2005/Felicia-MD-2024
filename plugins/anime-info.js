@@ -18,7 +18,7 @@ URL: *${url}*`
   conn.sendFile(m.chat, image_url, '', animeingfo, m)
 }
 handler.help = ['anime'].map(v => v + ' <judul>')
-handler.tags = ['animsearch','anime']
+handler.tags = ['anime']
 handler.command = /^(anime|animeinfo)$/i
 handler.limit = true
 handler.register = true
