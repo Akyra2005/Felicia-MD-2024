@@ -48,6 +48,8 @@ let defaultMenu = {
 — Server: *Railway.app*
 — Pengembang: *Keizha*
 — Total Pengguna: *${Object.keys(global.db.data.users).length}*
+— Thumbnail: 
+    *https://youtu.be/a2GujJZfXpg?si=rqmSaCM2JLOHoqVI*
 
 *Keterangan:*
 🅟 = Premium

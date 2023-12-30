@@ -47,7 +47,7 @@ global.adReplyS = {
             description: "𝗙𝗲𝗹𝗶𝗰𝗶𝗮-𝗠𝗗",
             previewType: "PHOTO",
             thumbnail: await fs.readFileSync("./55111188_p0.jpg"),
-            sourceUrl:  "http://bit.ly/49PsIf8",
+            sourceUrl:  "http://bit.ly/3RF4ufs",
         }
     }
 }

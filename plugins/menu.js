@@ -45,7 +45,7 @@ before: `*Hai Saya Adalah Felicia-MD*
 ⎔ *— Situs Milshake: https://bit.ly/3T3Yq2t*
 │
 │      *Diharapkan Anda Bergabung*
-⎔ *— Grup WhatsApp: https://bit.ly/49PsIf8*
+⎔ *— Grup WhatsApp: https://bit.ly/3RF4ufs*
 ╰ ⎔ ─━─━─━─━─━─━─━─━─━─━─━─━─━❐
 
 
