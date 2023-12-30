@@ -66,7 +66,7 @@ let handler = async function (m, { text, usedPrefix, command }) {
 ╰━━━━━━━━━━━━━━━━━╯
 
 Kamu Wajib Bergabung Ke:
-*https://chat.whatsapp.com/E01trCuEsNM22uL4hB7ktS*
+*https://chat.whatsapp.com/C8mwxq3Mr67A55TnTMCnjX*
 
 Manfaat? Lihat Dibawah
 *- Biasanya Mengadakan Giveaway*
