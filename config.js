@@ -35,7 +35,7 @@ global.v = '-'
 global.botdate = `⎔ 𝗗𝗔𝗧𝗘: ${week} ${date}\n⎔ 𝗧𝗜𝗠𝗘: ${wktuwib}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘: ${wktuwib}`
 // Sticker WM
-global.packname = `🖍️ 𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 𝗕𝗼𝘁 ⌬ 𝗙𝗲𝗹𝗶𝗰𝗶𝗮-𝗠𝗗\n\n• 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 么 𝗞𝗲𝗶𝘇𝗵𝗮\n• 𝗕𝗼𝘁 𝗡𝘂𝗺𝗯𝗲𝗿 𝟬𝟴𝟱𝟭-𝟱𝟵𝟮𝟱-𝟴𝟴𝟯𝟬\n• 𝗕𝗼𝘁 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 𝟱𝟮`
+global.packname = `🖍️ 𝗦𝘁𝗶𝗰𝗸𝗲𝗿𝘀 𝗖𝗿𝗲𝗮𝘁𝗲𝗱 𝗕𝘆 𝗕𝗼𝘁 ⌬ 𝗙𝗲𝗹𝗶𝗰𝗶𝗮-𝗠𝗗\n\n• 𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 么 𝗞𝗲𝗶𝘇𝗵𝗮\n• 𝗕𝗼𝘁 𝗡𝘂𝗺𝗯𝗲𝗿 𝟬𝟴𝟱𝟭-𝟱𝟵𝟮𝟱-𝟴𝟴𝟯𝟬\n• 𝗕𝗼𝘁 𝗩𝗲𝗿𝘀𝗶𝗼𝗻 𝟱𝟯`
 global.author = ``
 
 /* ===========Hiasan=========== */
@@ -133,7 +133,7 @@ global.footer = '꒷︶꒷꒥꒷ ‧₊˚ ꒰ ฅ˘ᴋᴏɴᴇᴋᴏ ᴍᴜʟᴛ
 /*============== SOCIAL ==============*/
 global.sig = 'https://instagram.com'
 global.sgh = 'https://github.com'
-global.sgc = 'https://chat.whatsapp.com/HanfYszpKzbGcCGgWdHLTa'
+global.sgc = 'https://chat.whatsapp.com/C8mwxq3Mr67A55TnTMCnjX'
 global.sdc = 'https://discord.gg'
 global.snh = 'https://nhentai.net'
 global.sfb = 'https://www.facebook.com'
@@ -209,6 +209,7 @@ global.rpg = {
             Fox: "🦊",
             agility: "🤸‍♂️",
             anggur: "🍇",
+            advenaglory: "🔅",
             apel: "🍎",
             aqua: "🥤",
             arc: "🏹",
@@ -235,6 +236,7 @@ global.rpg = {
             diamond: "💎",
             dog: "🐕",
             dragon: "🐉",
+            drink: "🍹",
             eleksirb: "🧪",
             elephant: "🐘",
             emasbatang: "🪙",
@@ -308,7 +310,7 @@ global.rpg = {
             umpan: "🪱",
             uncommon: "🎁",
             upgrader: "🧰",
-            wood: "🪵"
+            wood: "🪵"            
         }
         let results = Object.keys(emot).map(v => [v, new RegExp(v, "gi")]).filter(v => v[1].test(string))
         if (!results.length) return ""

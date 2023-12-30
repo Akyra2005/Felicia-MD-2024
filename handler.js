@@ -87,9 +87,12 @@ export async function handler(chatUpdate) {
                 if (!("kingdom" in user)) user.kingdom = true
                 if (!("misi" in user)) user.misi = ""
                 if (!("pasangan" in user)) user.pasangan = ""
+                if (!("partner" in user)) user.partner = ""
                 if (!("premium" in user)) user.premium = false
                 if (!("registered" in user)) user.registered = false
-                if (!("role" in user)) user.role = "Beginner"
+                if (!("rank" in user)) user.rank = "Pemula"
+                if (!("role" in user)) user.role = "Pemula"
+                if (!("title" in user)) user.title = ""
                 if (!("sewa" in user)) user.sewa = false
                 if (!("skill" in user)) user.skill = ""
                 if (!("title" in user)) user.title = ""
@@ -97,6 +100,7 @@ export async function handler(chatUpdate) {
                 if (!user.registered) {
                     if (!("name" in user)) user.name = m.name
                     if (!isNumber(user.age)) user.age = -1
+                    if (!isNumber(user.advenaglory)) user.advenaglory = 0
                     if (!isNumber(user.anggur)) user.anggur = 0
                     if (!isNumber(user.apel)) user.apel = 0
                     if (!isNumber(user.bibitanggur)) user.bibitanggur = 0
@@ -118,8 +122,17 @@ export async function handler(chatUpdate) {
 
 
                 if (!isNumber(user.afk)) user.afk = -1
+                if (!user.organization) user.organization = {};
+                if (!('name' in user.organization)) user.organization.name = '';
+				if (!isNumber(user.organization.level)) user.organization.level = 0
+				if (!('followers' in user.organization)) user.organization.followers = []
+				if (!isNumber(user.organization.organizationsDestroyed))user.organization.organizationsDestroyed = 0			
+				if (!isNumber(user.organization.followersDestroyed)) user.organization.followersDestroyed = 0
+				if (!('alliances' in user.organization)) user.organization.alliances = ''
                 if (!isNumber(user.agility)) user.agility = 0
                 if (!isNumber(user.anakanjing)) user.anakanjing = 0
+                if (!("anakname" in user)) user.anakname = ""
+                if (!("anakgender" in user)) user.anakgender = ""
                 if (!isNumber(user.anakcentaur)) user.anakcentaur = 0
                 if (!isNumber(user.anakgriffin)) user.anakgriffin = 0
                 if (!isNumber(user.anakkucing)) user.anakkucing = 0
@@ -169,6 +182,10 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.bibitmangga)) user.bibitmangga = 0
                 if (!isNumber(user.bibitpisang)) user.bibitpisang = 0
                 if (!isNumber(user.botol)) user.botol = 0
+                if (!isNumber(user.boostb)) user.boostb = 0
+                if (!isNumber(user.boosta)) user.boosta = 0
+                if (!isNumber(user.boosts)) user.boosts = 0
+                if (!isNumber(user.boostk)) user.boostk = 0
                 if (!isNumber(user.bow)) user.bow = 0
                 if (!isNumber(user.bowdurability)) user.bowdurability = 0
                 if (!isNumber(user.boxs)) user.boxs = 0
@@ -185,6 +202,16 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.centaurlastfeed)) user.centaurlastfeed = 0
                 if (!isNumber(user.clay)) user.clay = 0
                 if (!isNumber(user.coal)) user.coal = 0
+                if (!isNumber(user.c1)) user.c1 = 0
+                if (!isNumber(user.c2)) user.c2 = 0
+                if (!isNumber(user.c3)) user.c3 = 0
+                if (!isNumber(user.c4)) user.c4 = 0
+                if (!isNumber(user.c5)) user.c5 = 0
+                if (!isNumber(user.c6)) user.c6 = 0
+                if (!isNumber(user.c7)) user.c7 = 0
+                if (!isNumber(user.c8)) user.c8 = 0
+                if (!isNumber(user.c9)) user.c9 = 0
+                if (!isNumber(user.c10)) user.c10 = 0
                 if (!isNumber(user.coin)) user.coin = 0
                 if (!isNumber(user.common)) user.common = 0
                 if (!isNumber(user.crystal)) user.crystal = 0
@@ -196,6 +223,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.doglastfeed)) user.doglastfeed = 0
                 if (!isNumber(user.dory)) user.dory = 0
                 if (!isNumber(user.dragon)) user.dragon = 0
+                if (!isNumber(user.drink)) user.drink = 0
                 if (!isNumber(user.dragonexp)) user.dragonexp = 0
                 if (!isNumber(user.dragonlastfeed)) user.dragonlastfeed = 0
                 if (!isNumber(user.emas)) user.emas = 0
@@ -211,7 +239,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.fox)) user.fox = 0
                 if (!isNumber(user.foxexp)) user.foxexp = 0
                 if (!isNumber(user.foxlastfeed)) user.foxlastfeed = 0
-                if (!isNumber(user.fullatm)) user.fullatm = Infinity
+                if (!isNumber(user.fullatm)) user.fullatm = 0
                 if (!isNumber(user.gadodado)) user.gadodado = 0
                 if (!isNumber(user.gajah)) user.gajah = 0
                 if (!isNumber(user.gamemines)) user.gamemines = false
@@ -230,8 +258,8 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.gurita)) user.gurita = 0
                 if (!isNumber(user.harimau)) user.harimau = 0
                 if (!isNumber(user.haus)) user.haus = 100
-                if (!isNumber(user.healt)) user.healt = 100
-                if (!isNumber(user.health)) user.health = 100
+                if (!isNumber(user.healt)) user.healt = 200
+                if (!isNumber(user.health)) user.health = 200
                 if (!isNumber(user.healthmonster)) user.healthmonster = 0
                 if (!isNumber(user.healtmonster)) user.healtmonster = 0
                 if (!isNumber(user.hero)) user.hero = 1
@@ -304,10 +332,13 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.kyubilastfeed)) user.kyubilastfeed = 0
                 if (!isNumber(user.labu)) user.labu = 0
                 if (!isNumber(user.laper)) user.laper = 100
+                if (!isNumber(user.lastBirth)) user.lastBirth = 0
+                if (!isNumber(user.lastperisai)) user.lastperisai = 0
                 if (!isNumber(user.lastadventure)) user.lastadventure = 0
+                if (!isNumber(user.lastsport)) user.lastsport = 0
                 if (!isNumber(user.lastbansos)) user.lastbansos = 0
                 if (!isNumber(user.lastberbru)) user.lastberbru = 0
-                if (!isNumber(user.lastberkebon)) user.lastberkebon = 0
+                if (!isNumber(user.lastberkebun)) user.lastberkebun = 0
                 if (!isNumber(user.lastbunga)) user.lastbunga = 0
                 if (!isNumber(user.lastbunuhi)) user.lastbunuhi = 0
                 if (!isNumber(user.lastclaim)) user.lastclaim = 0
@@ -342,8 +373,12 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lastnebang)) user.lastnebang = 0
                 if (!isNumber(user.lastngocok)) user.lastngocok = 0
                 if (!isNumber(user.lastngojek)) user.lastngojek = 0
+                if (!isNumber(user.lastlk)) user.lastlk = 0
+                if (!isNumber(user.lastob)) user.lastob = 0
+                if (!isNumber(user.lastberburu)) user.lastberburu = 0
                 if (!isNumber(user.lastopen)) user.lastopen = 0
                 if (!isNumber(user.lastpekerjaan)) user.lastpekerjaan = 0
+                if (!isNumber(user.lastmerkosa)) user.lastmerkosa = 0
                 if (!isNumber(user.lastpotionclaim)) user.lastpotionclaim = 0
                 if (!isNumber(user.lastrampok)) user.lastrampok = 0
                 if (!isNumber(user.lastramuanclaim)) user.lastramuanclaim = 0
@@ -368,7 +403,8 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.lelebakar)) user.lelebakar = 0
                 if (!isNumber(user.leleg)) user.leleg = 0
                 if (!isNumber(user.level)) user.level = 0
-                if (!isNumber(user.limit)) user.limit = 10
+                if (!isNumber(user.limit)) user.limit = 40
+                if (!isNumber(user.pengeluaran)) user.pengeluaran = 0 
                 if (!isNumber(user.limitjoinfree)) user.limitjoinfree = 1
                 if (!isNumber(user.lion)) user.lion = 0
                 if (!isNumber(user.lionexp)) user.lionexp = 0
@@ -385,6 +421,7 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.makananphonix)) user.makananphonix = 0
                 if (!isNumber(user.makananserigala)) user.makananserigala = 0
                 if (!isNumber(user.mana)) user.mana = 0
+                if (!isNumber(user.manar)) user.manar = 0
                 if (!isNumber(user.mangga)) user.mangga = 0
                 if (!isNumber(user.money)) user.money = 0
                 if (!isNumber(user.monyet)) user.monyet = 0
@@ -467,20 +504,23 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.spammer)) user.spammer = 0
                 if (!isNumber(user.spinlast)) user.spinlast = 0
                 if (!isNumber(user.ssapi)) user.ssapi = 0
-                if (!isNumber(user.stamina)) user.stamina = 100
+                if (!isNumber(user.stamina)) user.stamina = 200
                 if (!isNumber(user.steak)) user.steak = 0
                 if (!isNumber(user.stick)) user.stick = 0
                 if (!isNumber(user.strength)) user.strength = 0
                 if (!isNumber(user.string)) user.string = 0
+                if (!isNumber(user.slayerglory)) user.slayerglory = 0
+                if (!isNumber(user.skilladventure)) user.skilladventure = 0             
+                if (!isNumber(user.skillgardening)) user.skillgardening = 0
+                if (!isNumber(user.skillfishing)) user.skillfishing = 0
+                if (!isNumber(user.skillsport)) user.skillsport = 0             
                 if (!isNumber(user.superior)) user.superior = 0
                 if (!isNumber(user.suplabu)) user.suplabu = 0
                 if (!isNumber(user.sushi)) user.sushi = 0
                 if (!isNumber(user.sword)) user.sword = 0
                 if (!isNumber(user.sworddurability)) user.sworddurability = 0
-                if (!isNumber(user.stamina)) user.stamina = 0
                 if (!isNumber(user.tigame)) user.tigame = 50
                 if (!isNumber(user.tiketcoin)) user.tiketcoin = 0
-                if (!isNumber(user.title)) user.title = 0
                 if (!isNumber(user.tomat)) user.tomat = 0
                 if (!isNumber(user.tprem)) user.tprem = 0
                 if (!isNumber(user.trash)) user.trash = 0
@@ -502,7 +542,89 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.wolfexp)) user.wolfexp = 0
                 if (!isNumber(user.wolflastfeed)) user.wolflastfeed = 0
                 if (!isNumber(user.wood)) user.wood = 0
-                if (!isNumber(user.wortel)) user.wortel = 0
+                if (!isNumber(user.wortel)) user.wortel = 0                
+    if (!isNumber(user.hargadiri)) user.hargadiri = 0
+    if (!isNumber(user.lastsex)) user.lastsex = 0
+    if (!isNumber(user.c1)) user.c1 = 0
+    if (!isNumber(user.c2)) user.c2 = 0
+    if (!isNumber(user.c3)) user.c3 = 0
+    if (!isNumber(user.c4)) user.c4 = 0
+    if (!isNumber(user.c5)) user.c5 = 0
+    if (!isNumber(user.c6)) user.c6 = 0
+    if (!isNumber(user.c7)) user.c7 = 0
+    if (!isNumber(user.c8)) user.c8 = 0
+    if (!isNumber(user.c9)) user.c9 = 0
+    if (!isNumber(user.c10)) user.c10 = 0
+    if (!isNumber(user.hp)) user.hp = 0
+    if (!isNumber(user.monitor)) user.monitor = 0
+    if (!isNumber(user.mb)) user.mb = 0
+    if (!isNumber(user.internet)) user.internet = 0
+    if (!isNumber(user.tipeyt)) user.tipeyt = 0
+    if (!isNumber(user.skillyt)) user.skillyt = 0
+    if (!isNumber(user.mak)) user.mak = 0
+    if (!isNumber(user.ssds)) user.ssds = 0
+    if (!isNumber(user.ram)) user.ram = 0
+    if (!isNumber(user.gpu)) user.gpu = 0
+    if (!isNumber(user.cpu)) user.cpu = 0
+    if (!isNumber(user.se)) user.se = 0
+    if (!isNumber(user.kamera)) user.kamera = 0
+    if (!isNumber(user.pencahayaan)) user.pencahayaan = 0
+    if (!isNumber(user.viewer)) user.viewer = 0
+    if (!isNumber(user.like)) user.like = 0
+    if (!isNumber(user.dislike)) user.dislike = 0
+    if (!isNumber(user.subscriber)) user.subscriber = 0
+    if (!isNumber(user.showtime)) user.showtime = 0
+    if (!isNumber(user.monet)) user.monet = 0
+    if (!isNumber(user.video)) user.video = 0
+    if (!isNumber(user.lastup)) user.lastup = 0
+    if (!isNumber(user.mie)) user.mie = 0
+    if (!isNumber(user.telur)) user.telur = 0
+    if (!isNumber(user.bawangmerah)) user.bawangmerah = 0
+    if (!isNumber(user.bawangputih)) user.bawangputih = 0
+    if (!isNumber(user.kecap)) user.kecap = 0
+    if (!isNumber(user.garam)) user.garam = 0
+    if (!isNumber(user.saostiram)) user.saostiram = 0
+    if (!isNumber(user.merica)) user.merica = 0
+    if (!isNumber(user.air)) user.air = 0
+    if (!isNumber(user.mieayam)) user.mieayam = 0
+    if (!isNumber(user.ruko)) user.ruko = 0
+    if (!isNumber(user.daunbawang)) user.daunbawang = 0
+    if (!isNumber(user.pajak)) user.pajak = 0;
+if (!isNumber(user.os)) user.os = 0;
+if (!isNumber(user.diperkosa)) user.diperkosa = 0;
+if (!isNumber(user.memperkosa)) user.memperkosa = 0;
+if (!isNumber(user.levelhunter)) user.levelhunter = 0;
+if (!("skill" in user)) user.skill = ""
+if (!isNumber(user.horizonglory)) user.horizonglory = 0;
+if (!isNumber(user.ravennaglory)) user.ravennaglory = 0;
+if (!isNumber(user.apocalypseglory)) user.apocalypseglory = 0;
+if (!isNumber(user.sakanaglory)) user.sakanaglory = 0;
+if (!isNumber(user.kazariteglory)) user.kazariteglory = 0;
+if (!("chname" in user)) user.chname = ""
+if (!isNumber(user.skillsportl)) user.skillsportl = 0;
+if (!isNumber(user.plastikpvc)) user.plastikpvc = 0;
+if (!isNumber(user.semikonduktor)) user.semikonduktor = 0;
+if (!isNumber(user.osr)) user.osr = 0;
+if (!isNumber(user.minyak)) user.minyak = 0;
+if (!isNumber(user.susu)) user.susu = 0;
+if (!isNumber(user.pisanggoreng)) user.pisanggoreng = 0;
+if (!isNumber(user.jusmangga)) user.jusmangga = 0;
+if (!isNumber(user.gulaiayam)) user.gulaiayam = 0;
+if (!isNumber(user.invest)) user.invest = 0;
+if (!isNumber(user.investProfit)) user.investProfit = 0;
+if (!isNumber(user.investExpiration)) user.investExpiration = 0;
+if (!isNumber(user.timeShifterLevel)) user.timeShifterLevel = 0;
+if (!isNumber(user.astralEssence)) user.astralEssence = 100;
+if (!isNumber(user.pity5Star)) user.pity5Star = 0;
+if (!isNumber(user.pity4Star)) user.pity4Star = 0;
+if (!isNumber(user.pity3Star)) user.pity3Star = 0;
+if (!user.wishHistory) user.wishHistory = []
+if (!user.husbu) user.husbu = []
+if (!user.waifu) user.waifu = []
+if (!user.loli) user.loli = []
+if (!user.milf) user.milf = []
+if (!user.furry) user.furry = []
+if (!('nickname' in user)) user.nickname = ''
 
                 if (!user.lbars) user.lbars = "[▒▒▒▒▒▒▒▒▒]"
                 if (!user.job) user.job = "Pengangguran"
@@ -515,6 +637,13 @@ export async function handler(chatUpdate) {
                     afkReason: "",
                     age: -1,
                     agility: 16,
+                    advenaglory: 0,
+                    anakgender: "",
+                    anakname: "",
+                    nickname: "",
+                    title: "",
+                    role: "Pemula",
+                    rank: "Pemula",
                     anakanjing: 0,
                     anakcentaur: 0,
                     anakgriffin: 0,
@@ -570,6 +699,10 @@ export async function handler(chatUpdate) {
                     bibitpisang: 0,
                     botol: 0,
                     bow: 0,
+                    boostb: 0,
+                    boosta: 0,
+                    boosts: 0,
+                    boostk: 0,
                     bowdurability: 0,
                     boxs: 0,
                     brick: 0,
@@ -596,6 +729,7 @@ export async function handler(chatUpdate) {
                     doglastfeed: 0,
                     dory: 0,
                     dragon: 0,
+                    drink: 0,
                     dragonexp: 0,
                     dragonlastfeed: 0,
                     emas: 0,
@@ -611,7 +745,7 @@ export async function handler(chatUpdate) {
                     fox: 0,
                     foxexp: 0,
                     foxlastfeed: 0,
-                    fullatm: Infinity,
+                    fullatm: 0,
                     gadodado: 0,
                     gajah: 0,
                     gamemines: false,
@@ -628,8 +762,8 @@ export async function handler(chatUpdate) {
                     gurita: 0,
                     harimau: 0,
                     haus: 100,
-                    healt: 100,
-                    health: 100,
+                    healt: 200,
+                    health: 200,
                     healtmonster: 100,
                     hero: 1,
                     herolastclaim: 0,
@@ -701,9 +835,12 @@ export async function handler(chatUpdate) {
                     kyubilastclaim: 0,
                     labu: 0,
                     laper: 100,
+                    lastBirth: 0,
                     lastadventure: 0,
+                    lastperisai: 0,
+                    lastsport: 0,
                     lastberbru: 0,
-                    lastberkebon: 0,
+                    lastberkebun: 0,
                     lastbunga: 0,
                     lastbunuhi: 0,
                     lastclaim: 0,
@@ -729,6 +866,8 @@ export async function handler(chatUpdate) {
                     lastmancingnormal: 0,
                     lastmining: 0,
                     lastmisi: 0,
+                    lastberburu: 0,
+                    lastmerkosa: 0,
                     lastmonthly: 0,
                     lastmulung: 0,
                     lastnambang: 0,
@@ -759,7 +898,7 @@ export async function handler(chatUpdate) {
                     lelebakar: 0,
                     leleg: 0,
                     level: 0,
-                    limit: 25,
+                    limit: 40,
                     limitjoinfree: 1,
                     lion: 0,
                     lionexp: 0,
@@ -777,8 +916,9 @@ export async function handler(chatUpdate) {
                     makananphonix: 0,
                     makananserigala: 0,
                     mana: 20,
+                    manar: 20,
                     mangga: 0,
-                    misi: "",
+                    misi: "",                  
                     money: 0,
                     monyet: 0,
                     mythic: 0,
@@ -792,6 +932,7 @@ export async function handler(chatUpdate) {
                     ojekk: 0,
                     oporayam: 0,
                     orca: 0,
+                    partner: "",
                     pancingan: 1,
                     panda: 0,
                     pasangan: "",
@@ -799,6 +940,7 @@ export async function handler(chatUpdate) {
                     pausbakar: 0,
                     pc: 0,
                     pepesikan: 0,
+                    pengeluaran: 0,
                     pet: 0,
                     phonix: 0,
                     phonixexp: 0,
@@ -832,7 +974,6 @@ export async function handler(chatUpdate) {
                     rhinoceroslastfeed: 0,
                     rock: 0,
                     roket: 0,
-                    role: "Newbie ㋡",
                     roti: 0,
                     rtrofi: "perunggu",
                     rubah: 0,
@@ -856,15 +997,20 @@ export async function handler(chatUpdate) {
                     serigalalastclaim: 0,
                     sewa: false,
                     shield: 0,
+                    slayerglory: 0,
                     skill: "",
                     skillexp: 0,
+                    skilladventure: 0,
+                    skillgardening: 0,
+                    skillfishing: 0,
+                    skillsport: 0,
                     snlast: 0,
                     soda: 0,
                     sop: 0,
                     spammer: 0,
                     spinlast: 0,
                     ssapi: 0,
-                    stamina: 100,
+                    stamina: 200,
                     steak: 0,
                     stick: 0,
                     strength: 30,
@@ -875,7 +1021,6 @@ export async function handler(chatUpdate) {
                     sushi: 0,
                     sword: 0,
                     sworddurability: 0,
-                    stamina: 0,
                     tigame: 50,
                     tiketcoin: 0,
                     title: "",
@@ -901,6 +1046,89 @@ export async function handler(chatUpdate) {
                     wolflastfeed: 0,
                     wood: 0,
                     wortel: 0,
+                    hargadiri: 0,
+                    lastsex: 0,					
+					c1: 0,
+                    c2 :0,
+                    c3 :0,
+                    c4: 0,
+                    c5: 0,
+                    c6: 0,
+                    c7: 0,
+                    c8: 0,
+                    c9: 0,
+                    c10: 0,
+                    hp: 0,
+                    monitor :0,
+                    mb :0,
+                    internet: 0,
+                    tipeyt: 0,
+                    chname: "",
+                    skillyt: 0,
+                    mak: 0,
+                    ssds: 0,
+                    ram: 0,
+                    gpu: 0,
+                    cpu: 0,
+                    se: 0,
+                    kamera: 0,
+                    pencahayaan: 0,
+                    viewer :0,
+                    like: 0,
+                    dislike: 0,
+                    subscriber: 0,
+                    showtime: 0,
+                    monet: 0,
+                    video: 0,
+                    lastup: 0,
+                    lastlk: 0,
+                    lastob: 0,
+                    mie :0,
+                    telur: 0,
+                    bawangmerah: 0,
+                    bawangputih: 0,
+                    kecap: 0,
+                    garam: 0,
+                    saostiram: 0,
+                    merica: 0,
+                    air: 0,
+                    mieayam: 0,
+                    ruko: 0,
+                    daunbawang: 0,
+                    pajak: 0,
+os: 0,
+diperkosa: 0,
+levelhunter: 0,
+skill: "",
+horizonglory: 0,
+ravennaglory: 0,
+apocalypseglory: 0,
+sakanaglory: 0,
+kazariteglory: 0,
+chname: "",
+skillsport: 0,
+plastikpvc: 0,
+semikonduktor: 0,
+osr: 0,
+minyak: 0,
+susu: 0,
+pisanggoreng: 0,
+jusmangga: 0,
+gulaiayam: 0,
+invest: 0,
+investProfit: 0,
+investExpiration: 0,
+timeShifterLevel: 0,
+astralEssence: 100,
+pity5Star: 0,
+pity4Star: 0,
+pity3Star: 0,
+wishHistory: [],
+husbu: [],
+waifu: [],
+loli: [],
+milf: [],
+furry: []
                 }
             let chat = global.db.data.chats[m.chat]
             if (typeof chat !== "object")
@@ -1225,6 +1453,15 @@ export async function handler(chatUpdate) {
                 if (plugin.level > _user.level) {
                     this.sendMessage(m.chat, {
                         text: `Diperlukan Level *${plugin.level}* Untuk Menggunakan Perintah Ini, Level Kamu *${_user.level}*`,
+                        mentions: [m.sender]
+                    }, {
+                        quoted: m
+                    })
+                    continue // If the level has not been reached
+                }
+                if (plugin.skillsport > _user.skillsport) {
+                    this.sendMessage(m.chat, {
+                        text: `*Sports Ability Kamu Tidak Cukup 🎽*\n\nDiperlukan Sports Ability ${plugin.skillsport} Untuk Menggunakan Perintah Ini\n*Sports Ability Kamu: ${_user.skillsport} 🎽*\n\n⭐Tips:\n*Dapatkan Sports Ability Di Library*`,
                         mentions: [m.sender]
                     }, {
                         quoted: m
