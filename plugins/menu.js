@@ -27,10 +27,10 @@ import { pickRandom } from '../lib/other-function.js'
 const defaultMenu = {
 before: `*Hai Saya Adalah Felicia-MD*
 
-╭─━─━─━─━─━─━─━─━─━─━─━─━─━❐
+╭──━─━─━─━─━─━─━─━─━─━─━─━❐
 ╰ ⎔ ─ *Get to Know Me*
 ━ ⎔ Nama: *Felicia*
-━ ⎔ Versi: *52.2611.23*
+━ ⎔ Versi: *53.3012.23*
 ━ ⎔ Rilis: *25-11-2021*
 ━ ⎔ Server: *Railway.app*
 ━ ⎔ Pengembang: *Keizha*
@@ -38,7 +38,7 @@ before: `*Hai Saya Adalah Felicia-MD*
 ╭ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 ⎔   Semua Menu     *.allmenu*
 ⎔   Tipe Menu          *.menulist*
-╰ ⎔ ─━─━─━─━─━─━─━─━─━─━─━─━─━❐
+╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
 
 ╭ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 │      *Membaca S&K Bot*
@@ -46,7 +46,7 @@ before: `*Hai Saya Adalah Felicia-MD*
 │
 │      *Diharapkan Anda Bergabung*
 ⎔ *— Grup WhatsApp: https://bit.ly/3RF4ufs*
-╰ ⎔ ─━─━─━─━─━─━─━─━─━─━─━─━─━❐
+╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
 
 
 `,

@@ -1,7 +1,3 @@
-import daily from './rpg-daily.js'
-import weekly from './rpg-weekly.js'
-import monthly from './rpg-monthly.js'
-import adventure from './rpg-adventure.js'
 
 const inventory = {
   others: {
@@ -215,24 +211,6 @@ const inventory = {
     fox: 10,
     dog: 10,
   },
-  cooldowns: {
-    lastclaim: {
-      name: 'claim',
-      time: daily.cooldown
-    },
-    lastweekly: {
-    	name: 'weekly',
-        time: weekly.cooldown
-        },
-    lastmonthly: {
-      name: 'monthly',
-      time: monthly.cooldown
-    },
-    lastadventure: {
-      name: 'adventure',
-      time: adventure.cooldown
-    }
-  }
 }
 let handler = async (m, { conn }) => {
   let user = global.db.data.users[m.sender]
@@ -247,23 +225,12 @@ let handler = async (m, { conn }) => {
   const dura = Object.keys(inventory.durabi).map(v => user[v] && `${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n').trim()
   const crates = Object.keys(inventory.crates).map(v => user[v] && `${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n').trim()
   const pets = Object.keys(inventory.pets).map(v => user[v] && `${global.rpg.emoticon(v)} ${v}: ${user[v] >= inventory.pets[v] ? 'Max Levels' : `Level(s) ${user[v]}`}`).filter(v => v).join('\n').trim()
-  const cooldowns = Object.entries(inventory.cooldowns).map(([cd, { name, time }]) => cd in user && `• ${name}: ${new Date() - user[cd] >= time ? '✅' : '❌'}`).filter(v => v).join('\n').trim()
-let allowedNumbers = ['17059004393', '6285163083750','6287777544597','6285755264612','6285855840686','628987044282'];
-
-if (allowedNumbers.includes(m.sender.split('@')[0])) {
-  // kode yang dijalankan jika nomor pengguna terdaftar dalam daftar yang diizinkan
-  let urls = [
-    'https://telegra.ph/file/2bbf85c04ad14e69ac22f.mp4',
-	    'https://telegra.ph/file/2bbf85c04ad14e69ac22f.mp4'
-  ];
-  let randomIndex = Math.floor(Math.random() * urls.length);
-  let url = urls[randomIndex];
-  const caption = `
+const caption = `
 👤 Name: ${conn.getName(m.sender)}
 🎖️ Tier: ${user.role}
 🎖️ Rank Hunter: ${user.rank}
 👑 Title: ${user.title}
-🛡️ Perisai: ${user.lastperisai == 0 ? 'Non-Aktif': 'Aktif'}
+🛡️ Perisai: ${user.lastperisai == 0 ? 'Non-Aktif' : 'Aktif'}
 🚗 Mobil: Beli Di .buycar
 ${Object.keys(inventory.others).map(v => user[v] && `${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
 TOOLS
@@ -303,115 +270,14 @@ CRATES
 ${crates}
 Total Crates: ${Object.keys(inventory.crates).map(v => user[v]).reduce((a, b) => a + b, 0)} Crates` : ''}${pets || user.petFood ? `
 
-
 PETS
-${pets ? pets + '\n' : ''}${user.petFood ? '🍖 Peetfood: ' + user.petFood : ''}` : ''}${cooldowns ? `
-
-COOLDOWN
-${cooldowns}` : ''}
-• Dungeon: ${user.lastdungeon == 0 ? '✅': '❌'}
-• Mining: ${user.lastmining == 0 ? '✅': '❌'}
-• Nebang: ${user.lastnebang == 0 ? '✅': '❌'}
-• Open Bo: ${user.lastob == 0 ? '✅': '❌'}
-• Hunter: ${user.lasthunt == 0 ? '✅': '❌'}
-• Sport: ${user.lastsport == 0 ? '✅': '❌'}
-• Merkosa: ${user.lastmerkosa == 0 ? '✅': '❌'}
-• Mulung: ${user.lastmulung == 0 ? '✅': '❌'}
-• Berkebun: ${user.lastberkebun == 0 ? '✅': '❌'}
-• Sex: ${user.lastsex == 0 ? '✅': '❌'}
-• Berburu: ${user.lastberburu == 0 ? '✅': '❌'}
-• Merampok: ${user.lastrob == 0 ? '✅': '❌'}
-• Misi: ${user.lastmisi == 0 ? '✅': '❌'}
-• Limitku: ${user.lastlk == 0 ? '✅': '❌'}
-
-Indicator:
-✅ - Tidak Cooldown
-❌ - Sedang Cooldown
+${pets ? pets + '\n' : ''}${user.petFood ? '🍖 Peetfood: ' + user.petFood : ''}
 
 🌙 Nickname: ${user.nickname}
-`.trim()
-  try {
-    await conn.sendFile(m.chat, url, null, '*IHGP Inventory*\n\n' + caption, m);
-  } catch (e) {
-    console.log(e);
-    m.reply('Maaf, terjadi kesalahan saat mengirim pesan gambar');
-  }
-} else {
-  // kode yang dijalankan jika nomor pengguna tidak terdaftar dalam daftar yang diizinkan
-    const caption = `
-👤 Name: ${conn.getName(m.sender)}
-🎖️ Tier: ${user.role}
-🎖️ Rank Hunter: ${user.rank}
-👑 Title: ${user.title}
-🛡️ Perisai: ${user.lastperisai == 0 ? 'Non-Aktif': 'Aktif'}
-🚗 Mobil: Beli Di .buycar
-${Object.keys(inventory.others).map(v => user[v] && `${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
-TOOLS
-${tools}` : ''}${dura ? `
+`.trim() : ''}
+`;
 
-${dura}` : ''}${ability ? `
-
-ABILITY
-${ability}
-Total Ability: ${Object.keys(inventory.ability).map(v => user[v]).reduce((a, b) => a + b, 0)} Level` : ''}${youtube ? `
-
-YOUTUBE
-${youtube}
-Total Performance: ${Object.keys(inventory.youtube).map(v => user[v]).reduce((a, b) => a + b, 0)} Performa` : ''}${items ? `
-
-ITEMS
-${items}
-Total Items: ${Object.keys(inventory.items).map(v => user[v]).reduce((a, b) => a + b, 0)} Items` : ''}${fruit ? `
-
-FRUIT
-${fruit}
-Total Fruit: ${Object.keys(inventory.fruit).map(v => user[v]).reduce((a, b) => a + b, 0)} Fruit` : ''}${food ? `
-
-FOOD
-${food}
-Total Food: ${Object.keys(inventory.food).map(v => user[v]).reduce((a, b) => a + b, 0)} Food` : ''}${animal ? `
-
-ANIMAL
-${animal}
-Total Animal: ${Object.keys(inventory.animal).map(v => user[v]).reduce((a, b) => a + b, 0)} Tail` : ''}${fish ? `
-
-FISH
-${fish}
-Total Fish: ${Object.keys(inventory.fish).map(v => user[v]).reduce((a, b) => a + b, 0)} Fish` : ''}${crates ? `
-
-CRATES
-${crates}
-Total Crates: ${Object.keys(inventory.crates).map(v => user[v]).reduce((a, b) => a + b, 0)} Crates` : ''}${pets || user.petFood ? `
-
-
-PETS
-${pets ? pets + '\n' : ''}${user.petFood ? '🍖 Peetfood: ' + user.petFood : ''}` : ''}${cooldowns ? `
-
-COOLDOWN
-${cooldowns}` : ''}
-• Dungeon: ${user.lastdungeon == 0 ? '✅': '❌'}
-• Mining: ${user.lastmining == 0 ? '✅': '❌'}
-• Nebang: ${user.lastnebang == 0 ? '✅': '❌'}
-• Open Bo: ${user.lastob == 0 ? '✅': '❌'}
-• Hunter: ${user.lasthunt == 0 ? '✅': '❌'}
-• Sport: ${user.lastsport == 0 ? '✅': '❌'}
-• Merkosa: ${user.lastmerkosa == 0 ? '✅': '❌'}
-• Mulung: ${user.lastmulung == 0 ? '✅': '❌'}
-• Berkebun: ${user.lastberkebun == 0 ? '✅': '❌'}
-• Sex: ${user.lastsex == 0 ? '✅': '❌'}
-• Berburu: ${user.lastberburu == 0 ? '✅': '❌'}
-• Merampok: ${user.lastrob == 0 ? '✅': '❌'}
-• Misi: ${user.lastmisi == 0 ? '✅': '❌'}
-• Limitku: ${user.lastlk == 0 ? '✅': '❌'}
-
-Indicator:
-✅ - Tidak Cooldown
-❌ - Sedang Cooldown
-
-🌙 Nickname: ${user.nickname}
-`.trim()
- m.reply('*INVENTORY*\n\n' + caption);
-}
+m.reply('*INVENTORY*\n\n' + caption);
 
 
 }

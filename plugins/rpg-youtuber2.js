@@ -35,18 +35,19 @@ let handler = async (m, { conn, usedPrefix }) => {
 *Video: ${user.video}*
 
 *CHANNEL NAME*
+*.chname*
 _Tetapkan Nama Channelmu_
 
 *YOUTUBER TYPE*
+*.select-tipeytb*
 _Sebagai Apa Kamu Menjadi Youtuber_
 
 *EQUIPMENT*
+*.equipment*
 _Tingkatkan Peralatan Untuk Meningkatkan Penghasilan_
 
-*STATISTIK*
-_Seberapa Bagus Performamu_
-
 *UPLOAD OR LIVE*
+*.konten*
 _Ungah Atau Siaran Langsung_
 
 `,
