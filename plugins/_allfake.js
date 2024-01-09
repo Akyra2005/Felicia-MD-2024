@@ -21,12 +21,12 @@ global.ppkecil = {
             contextInfo: {
             externalAdReply: {
                 showAdAttribution: true,
-                title: `𝗜𝗻𝘁𝗼 𝗬𝗼𝘂𝗿 𝗔𝗿𝗺𝘀`,
+                title: `ㅤㅤ𝗜𝗻𝘁𝗼 𝗬𝗼𝘂𝗿 𝗔𝗿𝗺𝘀`,
                 body: global.author,
-                thumbnail: await fs.readFileSync("./thumbnail.mp4"),
+                thumbnail: await fs.readFileSync("./thumbnail.jpg"),
                 thumbnailUrl: pppkecil,
                 sourceUrl: ``,
-                mediaType: 2,
+                mediaType: 1,
                 renderLargerThumbnail: true
             }
         }
