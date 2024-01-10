@@ -17,23 +17,20 @@ global.kontak2 = [
 ]
 global.pppkecil = AraChu2.getRandom()
 global.ucapan = ucapan()
-const imagePaths = ["./thumbnail.jpg", "./thumbnail2.jpg", "./thumbnail3.jpg"];
-
-const randomIndex = Math.floor(Math.random() * imagePaths.length);
-
 global.ppkecil = {
-  contextInfo: {
-    externalAdReply: {
-      showAdAttribution: true,
-      title: `ㅤㅤ𝗜𝗻𝘁𝗼 𝗬𝗼𝘂𝗿 𝗔𝗿্ম𝘀`,
-      body: global.author,
-      thumbnail: await fs.readFileSync(imagePaths[randomIndex]),
-      sourceUrl: "",
-      mediaType: 1,
-      renderLargerThumbnail: true,
-    },
-  },
-};
+            contextInfo: {
+            externalAdReply: {
+                showAdAttribution: true,
+                title: `ㅤㅤ𝗜 𝗳𝗹𝗼𝘄 𝗶𝗻𝘀𝗶𝗱𝗲 𝘆𝗼𝘂`,
+                body: global.author,
+                thumbnail: await fs.readFileSync("./thumbnail.jpg"),
+                thumbnailUrl: pppkecil,
+                sourceUrl: ``,
+                mediaType: 1,
+                renderLargerThumbnail: true
+            }
+        }
+    }
 
     
     /* Fake adReplyS*/
