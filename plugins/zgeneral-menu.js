@@ -265,7 +265,7 @@ const rm = mt[ri];
         text: '🕒',
         key: m.key }});
         
-await conn.reply(m.chat, '*Tunggu Sebentar*', m)
+await conn.reply(m.chat, '*Ulangi Permintaan Jika Menu Tidak Ditampilkan*', m)
 await conn.sendMessage(m.chat, {
 	        video: fs.readFileSync('./media/thumb3.mp4'),
             mimetype: 'video/mp4',
@@ -303,7 +303,7 @@ throw e
 }
 }
 handler.command = /^(allmenu)$/i
-handler.register = false
+handler.register = true
 
 export default handler
 
