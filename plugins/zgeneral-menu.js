@@ -48,8 +48,8 @@ let defaultMenu = {
 — Server: *Railway.app*
 — Pengembang: *Keizha*
 — Total Pengguna: *${Object.keys(global.db.data.users).length}*
-— Menu Song: *YT Novalia Komari*
-— Thumbnail: *TT Spicy Banana*
+— Menu Song: *Ryuk Theme*
+— Thumbnail: *Toho Animation*
 
 *Keterangan:*
 🅟 = Premium
