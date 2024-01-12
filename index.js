@@ -78,11 +78,19 @@ function isCrashedBySignal() {
     });
 
   p.on('error', (err) => {
+  const errorMessage = `ERROR [${new Date().toUTCString()}]: ${err}`;
+
+  if (errorMessage.includes('🚩 Koneksi ditutup, harap hapus folder KonekoSessions dan pindai ulang kode QR')) {
+    console.error(chalk.red(errorMessage));
+    console.error(chalk.red(`🔄 Restarting bot...`));
+    start('main.js');
+  } else {
     console.error(chalk.red(`❌ Error: ${err}`));
     p.kill();
     isRunning = false;
     start('main.js');
-  });
+  }
+});
 
   const pluginsFolder = path.join(path.dirname(currentFilePath), 'plugins');
 
