@@ -45,18 +45,21 @@ async function start(file) {
   });
 
   p.on('message', (data) => {
-    console.log(chalk.cyan(`🟢 [ R E Y Z ] ${data}`));
-    switch (data) {
-      case 'reset':
-        p.kill();
-        isRunning = false;
-        start.apply(this, arguments);
-        break;
-      case 'uptime':
-        p.send(process.uptime());
-        break;
-    }
-  });
+  console.log(chalk.cyan(`🟢 [ R E Y Z ] ${data}`));
+
+  switch (data) {
+    case 'reset':
+      p.kill();
+      isRunning = false;
+      start.apply(this, arguments);
+      break;
+    case 'uptime':
+      // Uncomment the line below if you want to restart on 'uptime'
+      // start.apply(this, arguments);
+      break;
+  }
+});
+
 
     p.on('exit', (code) => {
   isRunning = false;
