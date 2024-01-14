@@ -76,7 +76,7 @@ Tag: *${item.tags}*
 handler.help = ["deviantart"]
 handler.tags = ["internet"]
 handler.command = /^(deviantart)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

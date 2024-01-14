@@ -57,6 +57,6 @@ const handler = async (m, { conn }) => {
 handler.help = ['randomuser'];
 handler.tags = ['internet', 'tools'];
 handler.command = /^(randomuser|randuser|ruser|ranuser|rauser|rndmusr)$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

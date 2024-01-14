@@ -21,6 +21,6 @@ handler.command = /^(ikhlasin|ikhlas)$/i
 handler.mods = false
 handler.premium = false
 handler.group = true
-handler.register = true
+handler.register = false
 handler.fail = null
 export default handler

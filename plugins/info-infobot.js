@@ -76,7 +76,7 @@ Ram: *${format(totalmem() - freemem())} / ${format(totalmem())}*
 handler.help = ['botinfo']
 handler.tags = ['info']
 handler.command = /^(bot(info)?|infobot)$/i
-handler.register = true
+handler.register = false
 export default handler
 
 function clockString(ms) {

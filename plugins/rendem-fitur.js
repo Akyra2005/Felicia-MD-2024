@@ -37,6 +37,6 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 handler.help = ['randem'].map(v => v + ' <efek>')
 handler.tags = ['tools']
 handler.command = /^(randem)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

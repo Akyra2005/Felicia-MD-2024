@@ -15,5 +15,5 @@ handler.help = ['lolicon']
 handler.tags = ['maker']
 
 handler.command = /^(lolicon)$/i
-handler.register = true
+handler.register = false
 export default handler

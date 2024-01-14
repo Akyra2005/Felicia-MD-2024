@@ -24,6 +24,6 @@ conn.sendFile(m.chat, poto, 'wikwik.mp4', '*Sukses*', m)
 } 
 handler.help = handler.command = ['potato']
 handler.tags = ['random']
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

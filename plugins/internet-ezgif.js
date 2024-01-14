@@ -101,7 +101,7 @@ Ukuran File: *${item.fileSize}*
 handler.help = ["ezgif"]
 handler.tags = ["internet"]
 handler.command = /^(ezgif)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

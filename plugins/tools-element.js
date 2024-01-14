@@ -48,5 +48,5 @@ elementHandler.help = ['element'];
 elementHandler.tags = ['tools'];
 
 elementHandler.command = /^(element|ele)$/i;
-handler.register = true
+handler.register = false
 export default elementHandler

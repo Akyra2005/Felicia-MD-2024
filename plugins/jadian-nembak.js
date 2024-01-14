@@ -66,7 +66,7 @@ handler.help = ['tembak *@tag*']
 handler.tags = ['jadian']
 handler.command = /^(tembak|jadian)$/i
 handler.group = true
-handler.register = true
+handler.register = false
 export default handler
 
 

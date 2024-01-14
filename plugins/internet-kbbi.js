@@ -20,6 +20,6 @@ N = Nomina:
 handler.help = ['kbbi <teks>']
 handler.tags = ['internet']
 handler.command = /^kbbi$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

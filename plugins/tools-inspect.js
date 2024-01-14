@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
 handler.command = /^(inspect)$/i
 handler.help = ['inspect']
 handler.tags = ['tools']
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

@@ -9,6 +9,6 @@ ${txt}
 handler.help = ['listgc']
 handler.tags = ['info']
 handler.command = /^listgc|grouplist$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

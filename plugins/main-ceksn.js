@@ -24,5 +24,5 @@ conn.sendMessage(m.chat, {
 handler.help = ['ceksn']
 handler.tags = ['main']
 handler.command = /^(ceksn)$/i
-handler.register = true
+handler.register = false
 export default handler

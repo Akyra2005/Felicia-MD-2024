@@ -10,5 +10,5 @@ let handler = async (m, { conn }) => {
 handler.help = ['readviewonce']
 handler.tags = ['tools']
 handler.command = /^((read)?viewonce|rvo)$/i
-handler.register = true
+handler.register = false
 export default handler

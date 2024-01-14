@@ -7,6 +7,6 @@ let handler = async (m, { conn }) => {
   
  handler.help = ['simpcard'] 
  handler.tags = ['maker'] 
- handler.register = true
+ handler.register = false
  handler.command = /^(simpcard)$/i 
  export default handler

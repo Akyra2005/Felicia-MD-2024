@@ -33,7 +33,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['gempa']
 handler.tags = ['internet', 'info']
 handler.command = /^(gempa|gempabumi)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 handler.premium = false
 

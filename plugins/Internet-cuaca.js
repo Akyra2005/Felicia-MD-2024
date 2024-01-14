@@ -26,6 +26,6 @@ Angin: *${json.wind.speed} KM/Jam*
 handler.help = ['cuaca']
 handler.tags = ['internet']
 handler.command = /^(cuaca|weather)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

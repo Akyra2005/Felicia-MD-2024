@@ -73,7 +73,7 @@ Pratinjau Gambar: *${item.previewImage}*`
 handler.help = ["dafonts"]
 handler.tags = ["internet"]
 handler.command = /^(dafonts)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

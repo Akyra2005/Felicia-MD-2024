@@ -501,6 +501,6 @@ conn.reply(m.chat, konuk, m)}
 
 handler.command =  handler.help = ['trapito', 'kodenuklir']
 handler.tags = ['nsfw']
-handler.register = true
+handler.register = false
 handler.level = 1000
 export default  handler

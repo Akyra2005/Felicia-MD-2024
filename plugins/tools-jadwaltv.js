@@ -11,7 +11,7 @@ let handler = async (m, { text }) => {
 handler.help = ['jadwaltv']
 handler.tags = ['tools']
 handler.command = /^jadwaltv$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

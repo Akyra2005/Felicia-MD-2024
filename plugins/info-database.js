@@ -6,5 +6,5 @@ let handler = async (m) => {
 handler.help = ['database']
 handler.tags = ['info']
 handler.command = /^(database|jumlahdatabase|user)$/i
-handler.register = true
+handler.register = false
 export default handler

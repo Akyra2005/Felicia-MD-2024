@@ -14,7 +14,7 @@ handler.help = ['wallpapers','wp']
 handler.tags = ['tools']
 handler.command = ['wallpapers', 'wp']
 handler.diamond = true
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

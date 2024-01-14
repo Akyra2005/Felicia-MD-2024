@@ -23,7 +23,7 @@ handler.help = ['igstalk'].map(v => v + ' <username>')
 handler.tags = ['tools']
 handler.alias = ['igstalk', 'stalkig']
 handler.command = /^(igstalk|stalkig)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

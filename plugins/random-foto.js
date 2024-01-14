@@ -156,6 +156,6 @@ ${listnya}`
 }
 handler.command = handler.help = ["foto"]
 handler.tags = ['random']
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

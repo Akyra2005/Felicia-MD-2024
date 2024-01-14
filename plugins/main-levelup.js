@@ -33,7 +33,7 @@ ${teks}\n
 
 handler.help = ['levelup']
 handler.tags = ['rpg']
-handler.register = true
+handler.register = false
 handler.command = /^level(|up)$/i
 
 export default handler

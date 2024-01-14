@@ -47,6 +47,6 @@ let handler = async (m, { command, args }) => {
 handler.help = ['masak <masakan> <jumlah>', 'cook <masakan> <jumlah>']
 handler.tags = ['rpg']
 handler.command = /^(masak|cook)$/i
-handler.register = true
+handler.register = false
 handler.limit = 1
 export default handler

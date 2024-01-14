@@ -51,6 +51,6 @@ ${data.how_to_protect}
 handler.command = /^(cj|clickjacking|clickjack|clickjacker)?$/i;
 handler.tags = ['internet'];
 handler.help = ['cj <URL>'];
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

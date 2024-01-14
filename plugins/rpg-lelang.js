@@ -63,4 +63,4 @@ let handler = async (m, { conn, command, args }) => {
 handler.help = ['lelang <item> <harga awal> <lama lelang (menit)>'];
 handler.tags = ['rpg'];
 handler.command = /^lelang$/i;
-handler.register = true
+handler.register = false

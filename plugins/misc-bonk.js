@@ -14,6 +14,6 @@ let handler = async (m, { conn, text }) => {
 handler.command = /^(bonk)$/i
 handler.help = ['bonk']
 handler.tags = ['misc']
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

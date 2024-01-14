@@ -25,7 +25,7 @@ handler.help = ['cat']
 handler.tags = ['random']
 
 handler.command = /^cat$/i
-handler.register = true
+handler.register = false
 handler.fail = null
 
 export default handler

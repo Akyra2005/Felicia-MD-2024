@@ -13,6 +13,6 @@ var handler = async (m, { conn }) => {
 handler.help = ['joke'];
 handler.tags = ['internet', 'fun'];
 handler.command = /^(joke|lelucon)$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

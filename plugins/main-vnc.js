@@ -33,6 +33,6 @@ let handler = async (m, { conn, isBotAdmin }) => {
 handler.help = ['vnc *[reply media]*'];
 handler.tags = ['main'];
 handler.command = /^(vnc)$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

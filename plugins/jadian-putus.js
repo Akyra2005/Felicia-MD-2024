@@ -27,6 +27,6 @@ handler.help = ['putus']
 handler.tags = ['jadian']
 handler.command = /^(putus)$/i
 handler.group = true
-handler.register = true
+handler.register = false
 handler.fail = null
 export default handler

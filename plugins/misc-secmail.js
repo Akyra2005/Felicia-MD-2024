@@ -71,7 +71,7 @@ Tanggal: *${v.date}*
 handler.help = ["secmail"]
 handler.tags = ["misc"]
 handler.command = /^(secmail)$/i
-handler.register = true
+handler.register = false
 handler.premium = true
 export default handler
 

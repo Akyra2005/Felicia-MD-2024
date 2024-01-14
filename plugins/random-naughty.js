@@ -17,7 +17,7 @@ handler.command = ['naughty']
 handler.tags = ['random']
 
 handler.help = ['naughty']
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

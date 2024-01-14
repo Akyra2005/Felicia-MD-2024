@@ -12,5 +12,5 @@ let handler = async (m, { conn }) => {
 handler.help = handler.alias = ['getexif']
 handler.tags = ['tools']
 handler.command = /^(getexif)$/i
-handler.register = true
+handler.register = false
 export default handler

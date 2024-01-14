@@ -19,5 +19,5 @@ handler.help = ['delmsg']
 handler.tags = ['tools']
 
 handler.command = /^(-|del)(all|vn|msg|video|audio|img|stic?ker|gif)$/
-handler.register = true
+handler.register = false
 export default handler

@@ -26,7 +26,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['fake <text> @user <text2>']
 handler.tags = ['tools']
 handler.command = /^(fitnah|fakereply|fake)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

@@ -21,6 +21,6 @@ let handler = async (m, { jid, conn, usedPrefix }) => {
 handler.help = ['bannedlist']
 handler.tags = ['info']
 handler.command = /^listban(ned)?|ban(ned)?list|daftarban(ned)?$/i
-handler.register = true
+handler.register = false
 handler.owner = true
 export default handler

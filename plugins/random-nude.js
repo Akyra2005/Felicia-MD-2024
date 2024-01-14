@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
 handler.command = /^(nude)$/i
 handler.tags = ['random']
 handler.help = ['nude']
-handler.register = true
+handler.register = false
 handler.premium = true
 export default handler
 

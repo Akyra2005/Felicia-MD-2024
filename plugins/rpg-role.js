@@ -37,5 +37,5 @@ let handler = async (m, { conn }) => {
 handler.help = ['role']
 handler.tags = ['rpg']
 handler.command = /^(role|levelrole)$/i
-handler.register = true
+handler.register = false
 export default handler

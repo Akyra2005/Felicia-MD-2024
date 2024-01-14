@@ -66,7 +66,7 @@ Gambar: *${item.image}*
 handler.help = ["halodoc"]
 handler.tags = ["internet"]
 handler.command = /^(halodoc)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

@@ -26,5 +26,5 @@ handler.help = ['google']
 handler.tags = ['internet']
 handler.command = /^googlef?$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler

@@ -12,7 +12,7 @@ handler.help = ['jarak']
 handler.tags = ['internet']
 handler.command = ['jarak']
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler
 
 export async function jarak(dari, ke) {

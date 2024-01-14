@@ -68,6 +68,6 @@ handler.help = ['fetch'];
 handler.tags = ['tools'];
 handler.alias = ['get', 'fetch'];
 handler.command = /^(fetch|get)$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

@@ -32,5 +32,5 @@ handler.help = ['steam'];
 handler.tags = ['internet'];
 handler.command = /^(steam)$/i;
 handler.limit = true;
-handler.register = true
+handler.register = false
 export default handler;

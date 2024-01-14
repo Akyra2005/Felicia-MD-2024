@@ -33,7 +33,7 @@ let handler = async (m, { conn, isOwner, usedPrefix, command, args }) => {
 handler.help = ['logo'].map(v => v + ' <text>')
 handler.tags = ['maker']
 handler.command = ["logo", "logoget"]
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 function Logo(efek, teks1, teks2) {

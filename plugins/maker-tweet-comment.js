@@ -33,6 +33,6 @@ let handler = async (m, {
 handler.help = ["tweetc"]
 handler.tags = ["maker"]
 handler.command = ["tweetc"]
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

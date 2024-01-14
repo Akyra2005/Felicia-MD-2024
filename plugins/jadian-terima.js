@@ -40,6 +40,6 @@ handler.tags = ['jadian']
 handler.command = /^(terima)$/i
 handler.group = true
 handler.limit = false
-handler.register = true
+handler.register = false
 handler.fail = null
 export default handler

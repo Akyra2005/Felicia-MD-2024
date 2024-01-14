@@ -37,6 +37,6 @@ handler.help = ['kpop'].map(v => v + ' <query>')
 handler.tags = ['internet']
 
 handler.command = /^(kpop)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

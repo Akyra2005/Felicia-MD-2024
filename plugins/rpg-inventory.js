@@ -285,5 +285,5 @@ handler.help = ['inventory', 'inv']
 handler.tags = ['rpg']
 handler.command = /^(inv(entory)?|bal(ance)?|money|e?xp)$/i
 
-handler.register = true
+handler.register = false
 export default handler

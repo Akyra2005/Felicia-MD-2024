@@ -9,6 +9,6 @@ return m.reply(`*Obrolan Pribadi:* ` + niorg.length + '\n\n' + txt.trim())
 handler.help = ['listpc']
 handler.tags = ['info']
 handler.command = /^listpc|pc$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
