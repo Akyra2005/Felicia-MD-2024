@@ -59,23 +59,23 @@ async function start(file) {
   });
 
   p.on('exit', (code) => {
-    isRunning = false;
-    console.error(chalk.red(`🛑 Exited with code: ${code}`));
+  isRunning = false;
+  console.error(chalk.red(`🛑 Exited with code: ${code}`));
 
-    if (code === 0) return;
+  if (code === null && // Aplikasi mengalami crash
+    !isCrashedBySignal()) // Aplikasi tidak mengalami crash karena signal
+    start.apply(this, arguments);
+});
+
+function isCrashedBySignal() {
+  // Cek apakah aplikasi mengalami crash karena signal
+  return code === signal;
+}
 
     fs.watchFile(args[0], () => {
       fs.unwatchFile(args[0]);
       start('main.js');
     });
-  });
-
-  p.on('error', (err) => {
-    console.error(chalk.red(`❌ Error: ${err}`));
-    p.kill();
-    isRunning = false;
-    start('main.js');
-  });
 
   const pluginsFolder = path.join(path.dirname(currentFilePath), 'plugins');
 
