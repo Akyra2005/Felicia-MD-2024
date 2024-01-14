@@ -36,7 +36,7 @@ for (let i of asd[0].imgSrc) {
 handler.help = ['tiktokimg / ttimg <url>']
 handler.tags = ['downloader']
 handler.command = /^(ttimg|tiktokimg)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 
 export default handler

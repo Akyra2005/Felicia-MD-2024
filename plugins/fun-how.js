@@ -10,5 +10,5 @@ ${text} is ${(101).getRandom()}% ${command.replace('how', '').toUpperCase()}
 handler.help = ['gay', 'pintar', 'cantik', 'ganteng', 'gabut', 'gila', 'lesbi', 'stress', 'bucin', 'jones', 'sadboy'].map(v => 'how' + v + ' siapa?')
 handler.tags = ['kerang', 'fun']
 handler.command = /^how(gay|pintar|cantik|ganteng|gabut|gila|lesbi|stress?|bucin|jones|sadboy)/i
-handler.register = true
+handler.register = false
 export default handler

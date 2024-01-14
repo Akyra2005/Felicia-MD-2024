@@ -72,7 +72,7 @@ Tautan Pengarang: *${v.author.url}*
 handler.help = ["", "earch"].map(v => "yts" + v + " <pencarian>")
 handler.tags = ["tools"]
 handler.command = /^y(outubesearch|ts(earch)?)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

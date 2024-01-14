@@ -25,7 +25,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 handler.help = ['math']
 handler.tags = ['game']
 handler.command = /^math/i
-handler.register = true
+handler.register = false
 handler.limit = true
 
 let modes = {

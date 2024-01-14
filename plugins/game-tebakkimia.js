@@ -56,6 +56,6 @@ Usur Kimia: *${json.lambang}*
 handler.help = ['tebakkimia1', 'tebakkimia2', 'tebakkimia3', 'tebakkimia4']
 handler.tags = ['game']
 handler.command = /^tebakkimia[1234]$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

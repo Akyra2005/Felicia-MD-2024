@@ -23,6 +23,6 @@ handler.help = ['wm']
 handler.tags = ['sticker']
 handler.alias = ['wm', 'take']
 handler.command = /^(take|wm|swm|stikerwm|stickerwm)$/i
-handler.register = true
+handler.register = false
 handler.premium = true
 export default handler

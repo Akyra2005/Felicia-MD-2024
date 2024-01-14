@@ -91,7 +91,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['bertarung @user', 'fight @user']
 handler.tags = ['game']
 handler.command = /^(fight|bertarung)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

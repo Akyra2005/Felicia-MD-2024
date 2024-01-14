@@ -42,6 +42,6 @@ let handler = async (m, { text, usedPrefix }) => {
 handler.help = ['suit']
 handler.tags = ['game']
 handler.command = /^(suit)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

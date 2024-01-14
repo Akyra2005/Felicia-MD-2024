@@ -16,5 +16,5 @@ let handler = async (m, { conn, command }) => {
 handler.help = ['getpp <@tag/reply>']
 handler.tags = ['group']
 handler.command = /^(getpp)$/i
-handler.register = true
+handler.register = false
 export default handler

@@ -38,6 +38,6 @@ handler.tags = ['nsfw']
 handler.command = ['xnxxsearch', 'xnxx'] 
 handler.premium = false
 handler.limit = true
-handler.register = true
+handler.register = false
 
 export default handler

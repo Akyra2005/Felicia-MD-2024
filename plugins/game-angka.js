@@ -17,6 +17,6 @@ let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 handler.help = ['tebakangka <angka>']
 handler.tags = ['game']
 handler.command = /^(tebakangka)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

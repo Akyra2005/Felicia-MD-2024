@@ -186,5 +186,5 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 
 handler.command = handler.help = ["sfx", "sfx2", "sfx3", "smap"]
 handler.tags = ["audio"]
-handler.register = true
+handler.register = false
 export default handler

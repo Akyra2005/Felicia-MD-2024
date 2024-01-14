@@ -37,5 +37,5 @@ if (!text) throw `Format: *.perkosa Nama*`
 }
 handler.command = handler.help = ['genjot', 'nenen', 'wangy', 'curhat', 'perkosa']
 handler.tags = ['fun']
-handler.register = true
+handler.register = false
 export default handler

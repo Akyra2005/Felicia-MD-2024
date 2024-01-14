@@ -195,5 +195,5 @@ handler.help = ['war']
 handler.tags = ['game']
 handler.command = /^(war)$/i
 handler.group = true
-handler.register = true
+handler.register = false
 export default handler

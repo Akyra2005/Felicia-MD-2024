@@ -42,7 +42,7 @@ let handler = async (m, { conn, usedPrefix, command, text }) => {
 handler.menu = ['akinator']
 handler.tags  = ['game']
 handler.command = /^(akinator)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 
 export default handler

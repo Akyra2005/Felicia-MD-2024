@@ -16,5 +16,5 @@ handler.help = ['tomp3']
 handler.tags = ['tools']
 handler.alias = ['tomp3', 'toaudio']
 handler.command = /^to(mp3|audio)$/i
-handler.register = true
+handler.register = false
 export default handler

@@ -32,6 +32,6 @@ Tautan YouTube: *${v}*`
 handler.tags = ['downloader']
 handler.help = ['ytmp3']
 handler.command = /^yta|ytmp3|youtubemp3$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

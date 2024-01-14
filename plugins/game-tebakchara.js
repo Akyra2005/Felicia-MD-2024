@@ -56,7 +56,7 @@ let handler = async (m, { conn, command, usedPrefix }) => {
 handler.help = ['tebakchara1', 'tebakchara2', 'tebakchara3', 'tebakchara4']
 handler.tags = ['game']
 handler.command = /^tebakchara[1234]$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

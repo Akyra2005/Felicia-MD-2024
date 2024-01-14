@@ -27,5 +27,5 @@ let handler = async (m, { conn, usedPrefix }) => {
   handler.tags = ['tools','misc']
   handler.command = /^(profile3)$/i
   handler.group = true
-  handler.register = true
+  handler.register = false
   export default handler

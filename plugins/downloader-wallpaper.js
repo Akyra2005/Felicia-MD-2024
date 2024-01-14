@@ -7,7 +7,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.help = ['wallpaper' + ' <query>']
 handler.tags = ['downloader']
-handler.register = true
+handler.register = false
 handler.limit = true
 handler.command = /^(wallpaper)$/i
 

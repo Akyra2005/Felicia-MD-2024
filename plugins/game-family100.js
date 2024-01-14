@@ -26,6 +26,6 @@ Terdapat *${json.jawaban.length}* Jawaban${json.jawaban.find(v => v.includes(' '
 handler.help = ['family100']
 handler.tags = ['game']
 handler.command = /^family100$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

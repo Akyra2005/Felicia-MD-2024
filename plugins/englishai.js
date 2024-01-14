@@ -30,7 +30,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
 handler.help = ['englishai']
 handler.tags = ['ai']
 handler.command = ['englishai'];
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;
 

@@ -15,7 +15,7 @@ handler.help = ['twitter'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.alias = ['twt', 'twtdl', 'twitter', 'twitterdl']
 handler.command = /^((twt|twitter)(dl)?)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 
