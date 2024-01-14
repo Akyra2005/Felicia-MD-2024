@@ -7,7 +7,7 @@ handler.command = /^(renungan)$/i
 handler.owner = false
 handler.mods = false
 handler.premium = false
-handler.register = true
+handler.register = false
 handler.fail = null
 
 handler.limit = true

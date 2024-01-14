@@ -23,7 +23,7 @@ m.reply(wait)
 handler.tags = [`anime`,`nsfw`]
 handler.help = handler.command = ['btmles']
 handler.limit = true
-handler.register = true
+handler.register = false
 handler.nsfw = true
 export default handler;
 const randomNum = Math.floor(Math.random() * 100) + 1;

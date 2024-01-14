@@ -19,6 +19,6 @@ handler.help = ['tohdx']
 handler.tags = ['ai']
 handler.command = /^(tohdx)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 handler.premium = true
 export default handler

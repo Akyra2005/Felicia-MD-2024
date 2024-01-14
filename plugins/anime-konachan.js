@@ -11,7 +11,7 @@ handler.help = ['konachan']
 handler.tags = ['nsfw', 'anime']
 handler.command = /^(konachan)$/i
 handler.premium = true
-handler.register = true
+handler.register = false
 export default handler
 
 function pickRandom(list) {

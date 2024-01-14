@@ -17,5 +17,5 @@ handler.help = ['toanime', 'jadianime']
 handler.tags = ['anime', 'ai']
 handler.command = /^(jadianime|toanime)$/i
 handler.premium = true
-handler.register = true
+handler.register = false
 export default handler

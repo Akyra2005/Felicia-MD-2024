@@ -11,7 +11,7 @@ let name = conn.getName(who)
 handler.help = ['animecum']
 handler.tags = ['anime', 'nsfw','premium']
 handler.command = /^(animecum)$/i
-handler.register = true
+handler.register = false
 handler.premium = true
 
 export default handler

@@ -28,6 +28,6 @@ handler.help = ['kodepos'];
 handler.tags = ['tools'];
 handler.command = /^(kodepos)$/i;
 handler.limit = true;
-handler.register = true
+handler.register = false
 
 export default handler;

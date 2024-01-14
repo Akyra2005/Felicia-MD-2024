@@ -116,7 +116,7 @@ ${getUserProfileInfo(videoX)}
 handler.help = ["tiktok"]
 handler.tags = ["downloader"]
 handler.command = /^t(iktok|t(dl)?)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

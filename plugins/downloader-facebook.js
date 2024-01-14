@@ -86,7 +86,7 @@ var handler = async (m, { args }) => {
 handler.help = ['fb'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.limit = true
-handler.register = true
+handler.register = false
 
 handler.command = /^(fb(dl)?)$/i
 

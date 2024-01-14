@@ -9,7 +9,7 @@ handler.tags = ['anime']
 handler.help = ['own-safe']
 export default handler
 handler.limit = true
-handler.register = true
+handler.register = false
 
 global.gamanaufal = [
 	'https://telegra.ph/file/f34d76df4a2065af1a5ba.jpg',

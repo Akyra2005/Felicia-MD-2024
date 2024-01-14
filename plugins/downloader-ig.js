@@ -35,5 +35,5 @@ handler.tags = ['downloader']
 handler.help = ['instagram','ig']
 handler.premium = false
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler

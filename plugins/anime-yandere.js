@@ -32,7 +32,7 @@ handler.help = handler.alias = ['yandere', 'yande'].map((v) => v + ' <query> [pa
 handler.tags = ['downloader'];
 handler.command = /^(yandere|yande)$/i;
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler;
 
 async function getYandeImage(query, page = '') {

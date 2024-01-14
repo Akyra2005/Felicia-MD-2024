@@ -39,6 +39,6 @@ Ditonton: *${v.views}*`
 handler.help = ['playlist *<teks>*'];
 handler.tags = ['downloader'];
 handler.command = /^playlist|playlist2$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

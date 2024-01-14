@@ -7,5 +7,5 @@ m.reply(f)
 handler.help = ['cerpen']
 handler.tags = ['internet']
 handler.command = /^(cerpen)$/i;
-handler.register = true
+handler.register = false
 export default handler;

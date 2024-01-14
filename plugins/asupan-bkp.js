@@ -11,5 +11,5 @@ handler.command = /^(bokep3)$/i
 handler.tags = ['nsfw']
 handler.help = ['bokep3']
 handler.premium = true
-handler.register = true
+handler.register = false
 export default handler

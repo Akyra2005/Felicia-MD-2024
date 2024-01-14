@@ -18,7 +18,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = handler.alias = ['pinterest'].map(v => v + ' <query / url>')
 handler.tags = ['downloader']
 handler.command = /^(pinterest|pin)$/i
-handler.register = true
+handler.register = false
 export default handler
 
 async function pinterest(query) {

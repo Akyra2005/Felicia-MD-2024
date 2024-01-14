@@ -25,6 +25,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = ['soundcloud'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(soundcloud|scdl)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

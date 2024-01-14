@@ -10,7 +10,7 @@ handler.tags = ['anime']
 handler.command = /^(miku2)$/i
 
 handler.limit = true
-handler.register = true
+handler.register = false
 
 export default handler
 

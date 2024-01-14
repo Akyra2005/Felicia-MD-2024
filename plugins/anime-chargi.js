@@ -27,5 +27,5 @@ await conn.sendFile(m.chat, image, 'gi.jpg', capt, m)
 handler.help = ['charagi']
 handler.command = /^charagi$/i
 handler.tags = ['internet']
-handler.register = true
+handler.register = false
 export default handler

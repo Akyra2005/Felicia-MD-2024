@@ -22,7 +22,7 @@ let handler = async (m, { conn, args }) => {
 handler.menudownload = ['gdrive <url>']
 handler.tagsdownload = ['search']
 handler.command = /^(g?(oogle)?drive)$/i
-handler.register = true
+handler.register = false
 handler.premium = false
 handler.limit = true
 

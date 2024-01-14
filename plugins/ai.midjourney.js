@@ -23,7 +23,7 @@ handler.help = ["midjourney"]
 handler.tags = ["ai"]
 handler.command = /^midjourney$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler
 
 async function Draw(propmt) {

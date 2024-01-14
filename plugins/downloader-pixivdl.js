@@ -17,7 +17,7 @@ handler.help = handler.alias = ['pixiv']
 handler.tags = ['downloader']
 handler.command = /^(pixiv)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler
 
 async function pixivDl(query) {

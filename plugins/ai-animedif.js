@@ -14,5 +14,5 @@ handler.help = ['animedif']
 handler.tags = ['ai']
 handler.command = /^(animedif)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler

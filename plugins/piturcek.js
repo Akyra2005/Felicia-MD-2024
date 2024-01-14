@@ -110,5 +110,5 @@ break
 handler.help = ['cek <menu> <user>']
 handler.tags = ['fun'] 
 handler.command = /^cek$/i
-handler.register = true
+handler.register = false
 export default handler

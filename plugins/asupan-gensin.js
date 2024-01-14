@@ -8,7 +8,7 @@ handler.command = /^(genshin2)$/i
 handler.tags = ['random']
 handler.help = ['genshin2']
 handler.limit = false
-handler.register = true
+handler.register = false
 export default handler
 
 global.gensin = [

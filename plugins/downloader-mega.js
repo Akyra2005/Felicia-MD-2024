@@ -39,6 +39,6 @@ let handler = async (m, { conn, args, usedPrefix, text, command }) => {
 handler.help = ["mega"]
 handler.tags = ["downloader"]
 handler.command = /^(mega)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

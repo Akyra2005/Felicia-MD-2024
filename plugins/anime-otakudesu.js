@@ -25,5 +25,5 @@ handler.help = ['otaku'].map(v => v + ' <anime>')
 handler.tags = ['tools','anime']
 handler.command = /^(otaku|otakudesu)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler

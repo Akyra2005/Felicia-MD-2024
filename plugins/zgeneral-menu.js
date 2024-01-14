@@ -303,7 +303,7 @@ throw e
 }
 }
 handler.command = /^(allmenu)$/i
-handler.register = true
+handler.register = false
 
 export default handler
 

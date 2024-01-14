@@ -53,6 +53,6 @@ Nilai: ${ratings}`;
 imdbHandler.help = ['imdb','movie'];
 imdbHandler.tags = ['tools'];
 imdbHandler.command = /^(imdb|movie)$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default imdbHandler;

@@ -254,5 +254,5 @@ handler.command = handler.help = ['jalantikus-meme',
 'cnn-news',
 'fajar-news']
 handler.tags = ['news']
-handler.register = true
+handler.register = false
 export default handler;

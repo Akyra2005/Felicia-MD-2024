@@ -12,7 +12,7 @@ let handler = async (m, { conn }) => {
 handler.help = ['exo']
 handler.tags = ['asupan']
 handler.limit = false
-handler.register = true
+handler.register = false
 handler.command = /^(exo)$/i
 
 export default handler

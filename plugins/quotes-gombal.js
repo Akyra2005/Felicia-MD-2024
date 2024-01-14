@@ -5,7 +5,7 @@ handler.help = ["gombal"];
 handler.tags = ["quotes"];
 handler.command = /^(gombal)$/i;
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler;
 
 function pickRandom(list) {

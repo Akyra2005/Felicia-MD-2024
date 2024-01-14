@@ -39,5 +39,5 @@ handler.help = ["saucenao",'nao'].map(v => v + ' <reply/caption>')
 handler.tags = ["anime","tools"];
 handler.command = /^(saucenao|nao)$/i;
 handler.limit = true;
-handler.register = true
+handler.register = false
 export default handler;

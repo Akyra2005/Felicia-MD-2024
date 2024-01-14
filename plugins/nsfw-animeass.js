@@ -13,7 +13,7 @@ conn.sendFile(m.chat, pickRandom(animeass), null, `*Sukses*`, m)
 handler.help = ['animeass']
 handler.tags = ['anime', 'nsfw']
 handler.command = /^(animeass)$/i
-handler.register = true
+handler.register = false
 handler.limit = 2
 handler.premium = false
 

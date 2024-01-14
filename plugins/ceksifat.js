@@ -84,5 +84,5 @@ let handler = async (m, {
 handler.help = ['ceksifat', 'masadepannya'].map(v => v + ' <nama>');
 handler.tags = ['kerang', 'fun'];
 handler.command = ['ceksifat', 'masadepannya'];
-handler.register = true
+handler.register = false
 export default handler;

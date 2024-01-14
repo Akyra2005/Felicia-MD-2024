@@ -141,7 +141,7 @@ throw "*E R R O R*"}
 handler.help = ['play', 'play2']
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

@@ -15,6 +15,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = handler.alias = ['mediafire'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(mediafire)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

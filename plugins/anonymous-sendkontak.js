@@ -19,5 +19,5 @@ handler.help = ['sendkontak']
 handler.tags = ['anonymous']
 handler.command = /^(sendkontak)$/i
 handler.private = true
-handler.register = true
+handler.register = false
 export default handler

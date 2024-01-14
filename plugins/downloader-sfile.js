@@ -21,7 +21,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = handler.alias = ['sfile'].map(v => v + ' <query / url>')
 handler.tags = ['downloader']
 handler.command = /^(sfile)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

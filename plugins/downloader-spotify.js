@@ -34,7 +34,7 @@ throw '*E R R O R*'
 
 handler.command = /^(spotify)$/i
 handler.help = ['spotify'].map(v => v + ' <query>')
-handler.register = true
+handler.register = false
 handler.limit = true
 handler.tags = ['downloader']
 export default handler

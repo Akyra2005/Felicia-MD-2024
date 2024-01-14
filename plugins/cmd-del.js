@@ -21,5 +21,5 @@ handler.help = ['delcmd <teks>'];
 handler.tags = ['database', 'premium'];
 handler.command = /^delcmd$/i;
 handler.premium = true;
-handler.register = true
+handler.register = false
 export default handler;

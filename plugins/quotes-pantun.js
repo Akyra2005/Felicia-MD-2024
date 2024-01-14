@@ -12,7 +12,7 @@ handler.help = ['pantun']
 handler.tags = ['quotes']
 handler.command = /^(pantun)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler
 
 function ucapan() {

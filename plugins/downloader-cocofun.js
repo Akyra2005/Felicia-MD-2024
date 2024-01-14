@@ -18,6 +18,6 @@ let handler = async (m, { conn, args }) => {
 handler.help = ['cocofun'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(cocofun|cocofundl)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler

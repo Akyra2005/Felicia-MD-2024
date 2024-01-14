@@ -7,7 +7,7 @@ handler.command = /^asupan$/i
 
 handler.premium = false
 handler.fail = null
-handler.register = true
+handler.register = false
 
 export default handler
 

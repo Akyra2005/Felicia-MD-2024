@@ -22,5 +22,5 @@ handler.help = ['otakudl'].map(v => v + ' <id>')
 handler.tags = ['downloader','anime']
 handler.command = /^(otakudl|otakudesudl)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 export default handler

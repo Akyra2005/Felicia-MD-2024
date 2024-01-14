@@ -136,5 +136,5 @@ ${listnya}`
 handler.command = handler.help = ["fantox"]
 handler.tags = ["anime","nsfw"]
 handler.premium = true
-handler.register = true
+handler.register = false
 export default handler

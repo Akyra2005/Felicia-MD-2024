@@ -10,6 +10,6 @@ let handler = async(m, { conn, text }) => {
 handler.help = ['quotesanime']
 handler.tags = ['quotes']
 handler.command = /^(quotesanime|kataanime)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler 

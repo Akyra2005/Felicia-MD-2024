@@ -8,7 +8,7 @@ handler.command = /^(cogan)$/i
 handler.tags = ['random']
 handler.help = ['cogan']
 handler.premium = false
-handler.register = true
+handler.register = false
 handler.limit = true
  
 export default handler

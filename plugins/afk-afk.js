@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['afk [alasan]']
 handler.tags = ['main']
 handler.group = true
-handler.register = true
+handler.register = false
 handler.command = /^afk$/i
 
 export default handler

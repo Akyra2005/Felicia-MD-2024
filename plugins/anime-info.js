@@ -21,6 +21,6 @@ handler.help = ['anime'].map(v => v + ' <judul>')
 handler.tags = ['anime']
 handler.command = /^(anime|animeinfo)$/i
 handler.limit = true
-handler.register = true
+handler.register = false
 //maapin fatur :<
 export default handler

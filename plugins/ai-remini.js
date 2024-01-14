@@ -137,6 +137,6 @@ handler.help = ["remini"];
 handler.tags = ["ai"];
 handler.premium = false;
 handler.limit = true
-handler.register = true
+handler.register = false
 handler.command = ["remini"];
 export default handler;

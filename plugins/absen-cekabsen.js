@@ -30,5 +30,5 @@ handler.help = ['cekabsen']
 handler.tags = ['absen']
 handler.command = /^cekabsen$/i
 handler.group = true
-handler.register = true
+handler.register = false
 export default handler

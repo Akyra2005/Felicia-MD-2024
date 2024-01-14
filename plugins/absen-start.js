@@ -15,5 +15,5 @@ handler.tags = ['absen']
 handler.command = /^(start|mulai)absen$/i
 handler.group = true
 handler.admin = true
-handler.register = true
+handler.register = false
 export default handler

@@ -10,5 +10,5 @@ let handler = async (m, { conn }) => {
 handler.help = ['listcmd'];
 handler.tags = ['database'];
 handler.command = ['listcmd'];
-handler.register = true
+handler.register = false
 export default handler;

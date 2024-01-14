@@ -16,7 +16,7 @@ handler.help = ['bocil']
 
 handler.tags = ['random']
 handler.limit = false
-handler.register = true
+handler.register = false
 
 handler.command = /^(bocil)$/i
 

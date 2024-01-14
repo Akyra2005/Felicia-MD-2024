@@ -8,5 +8,5 @@ let cecan = pickRandom(global.cecan)
 handler.help = handler.command = ['cecan']
 handler.tags = ['asupan']
 handler.limit = false
-handler.register = true
+handler.register = false
 export default handler

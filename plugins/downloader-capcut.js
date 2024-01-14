@@ -15,6 +15,6 @@ conn.sendMessage(m.chat, { video: { url: data.originalVideoUrl }, caption: cap }
 handler.help = ['capcut'].map(v => v + ' <url>');
 handler.tags = ['downloader'];
 handler.command = /^(capcut)$/i;
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler;

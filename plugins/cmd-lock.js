@@ -22,5 +22,5 @@ handler.help = ['lockcmd', 'unlockcmd'];
 handler.tags = ['database'];
 handler.command = /^(un)?lockcmd$/i;
 handler.premium = true;
-handler.register = true
+handler.register = false
 export default handler;

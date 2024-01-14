@@ -11,5 +11,5 @@ handler.tags = ['sticker' , 'premium']
 handler.command = /^(attp2)$/i
 handler.limit = true
 handler.premium = true
-handler.register = true
+handler.register = false
 export default handler

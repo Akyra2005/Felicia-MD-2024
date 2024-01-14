@@ -11,7 +11,7 @@ let handler = async (m, { conn }) => {
 handler.help = ['bts']
 handler.tags = ['random']
 handler.limit = false
-handler.register = true
+handler.register = false
 handler.command = /^(bts)$/i
 
 export default handler

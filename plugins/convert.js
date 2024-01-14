@@ -20,7 +20,7 @@ let handler = async (m, {
 }
 handler.tags = ["tools"]
 handler.command = handler.help = ["convert"]
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

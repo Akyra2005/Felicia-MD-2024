@@ -12,7 +12,7 @@ await conn.sendFile(m.chat, url, 'lah.jpg', '*Sukses*', m )
 handler.help = ['foxgirl']
 handler.tags = ['anime']
 handler.command = /^(foxgirl)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 
 export default handler

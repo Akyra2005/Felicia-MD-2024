@@ -13,6 +13,6 @@ import fetch from "node-fetch"
  handler.help = ['ppcp'] 
  handler.tags = ['internet'] 
  handler.command = /^ppcp$/i
- handler.register = true
+ handler.register = false
  handler.limit = true
  export default handler

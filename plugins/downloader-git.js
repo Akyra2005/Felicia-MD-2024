@@ -19,5 +19,5 @@ let handler = async (m, { conn, args }) => {
 handler.help = handler.alias = ['gitdl'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(gitdl)$/
-handler.register = true
+handler.register = false
 export default handler
