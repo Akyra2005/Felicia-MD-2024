@@ -13,5 +13,5 @@ handler.command = /^(group|grup)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
-handler.register = true
+handler.register = false
 export default handler

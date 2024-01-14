@@ -13,7 +13,7 @@ handler.help = ['cekexpired']
 handler.tags = ['group']
 handler.command = /^((cek)?expired)$/i
 handler.group = true
-handler.register = true
+handler.register = false
 export default handler
 
 function msToDate(ms) {

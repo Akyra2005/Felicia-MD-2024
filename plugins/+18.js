@@ -20,7 +20,7 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.limit = false
-handler.register = true
+handler.register = false
 
 export default handler 
 

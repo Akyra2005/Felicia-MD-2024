@@ -9,7 +9,7 @@ handler.premium = false;
 handler.limit = true;
 
 handler.fail = null;
-handler.register = true;
+handler.register = false;
 
 export default handler;
 

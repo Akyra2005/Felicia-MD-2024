@@ -16,9 +16,9 @@ let handler = async (m,{ conn} ) => {
   conn.reply(m.chat, `*GET DAILY*\n${text.trim()}`, m)
   user.lastbunga = new Date() * 1
 }
-handler.help = ['daily', 'claim']
+handler.help = ['daily']
 handler.tags = ['xp','rpg']
-handler.command = /^(daily|claim)$/i
+handler.command = /^(daily)$/i
 handler.register = false
 handler.cooldown = cooldown
 

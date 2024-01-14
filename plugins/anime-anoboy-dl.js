@@ -25,5 +25,5 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['anoboydl'].map(v => v + ' <id>')
 handler.tags = ['tools']
 handler.command = /^(anoboydl)$/i
-handler.register = true
+handler.register = false
 export default handler

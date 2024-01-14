@@ -22,7 +22,7 @@ let handler = async (m, { conn, isOwner, usedPrefix, command, args }) => {
 handler.help = ["diffusion"]
 handler.tags = ["misc"]
 handler.command = /^(diffusion)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

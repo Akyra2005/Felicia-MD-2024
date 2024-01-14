@@ -26,7 +26,7 @@ let handler = async (m, {
 handler.help = ["poll pertanyaan|pilihan|pilihan"]
 handler.tags = ["group"]
 handler.command = /^po(l((l?ing|ls)|l)|ols?)$/i
-handler.register = true
+handler.register = false
 export default handler
 
 function checkDuplicate(arr) {

@@ -6,7 +6,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['tagme']
 handler.tags = ['group']
 handler.command = /^tagme$/i
-handler.register = true
+handler.register = false
 handler.group = false
 
 export default handler

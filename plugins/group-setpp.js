@@ -69,7 +69,7 @@ handler.tags = ['group']
 handler.alias = ['setppgc', 'setppgrup', 'setppgroup']
 handler.command = /^setpp(gc|grup|group)$/i
 handler.group = handler.admin = handler.botAdmin = true
-handler.register = true
+handler.register = false
 export default handler
 
 async function generateProfilePicture(buffer) {

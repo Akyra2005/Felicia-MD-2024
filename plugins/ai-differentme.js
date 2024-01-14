@@ -41,6 +41,6 @@ handler.help = ['differentme']
 handler.tags = ['ai']
 handler.command = /^(differentme)$/i
 handler.premium = true
-handler.register = true
+handler.register = false
 
 export default handler

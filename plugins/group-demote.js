@@ -10,7 +10,7 @@ handler.command = /^(demote)$/i
 handler.botAdmin = true
 handler.admin = true
 handler.group = true
-handler.register = true
+handler.register = false
 export default handler
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))

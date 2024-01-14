@@ -62,7 +62,7 @@ try {
 handler.help = ["animes"]
 handler.tags = ['internet']
 handler.command = ["animes"]
-handler.register = true
+handler.register = false
 handler.limit = true
 export default handler
 

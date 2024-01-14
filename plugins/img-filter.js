@@ -31,7 +31,7 @@ ${effects.map(effect => `_> ${effect}_`).join('\n')}
 handler.help = ['filter']
 handler.tags = ['internet']
 handler.command = /^(filter)$/i
-handler.register = true
+handler.register = false
 handler.limit = true
 
 export default handler

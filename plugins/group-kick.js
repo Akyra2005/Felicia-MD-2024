@@ -15,7 +15,7 @@ handler.help = ['kick', '-'].map(v => v + ' @user')
 handler.tags = ['group']
 handler.command = /^(kic?k|remove|tendang|\-)$/i
 handler.admin = true
-handler.register = true
+handler.register = false
 handler.group = true
 handler.botAdmin = true
 export default handler

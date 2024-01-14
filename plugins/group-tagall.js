@@ -7,5 +7,5 @@ handler.help = ['tagall']
 handler.tags = ['group']
 handler.command = /^(tagall)$/i
 handler.admin = handler.group = true
-handler.register = true
+handler.register = false
 export default handler

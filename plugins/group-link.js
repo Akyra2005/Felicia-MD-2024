@@ -14,7 +14,7 @@ handler.help = ['linkgroup'].map(v => v + ' <jid>')
 handler.tags = ['group']
 handler.command = /^link(gro?up)?$/i
 handler.group = true
-handler.register = true
+handler.register = false
 handler.botAdmin = true
 handler.admin = true
 export default handler
