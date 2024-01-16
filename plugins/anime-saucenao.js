@@ -38,6 +38,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 handler.help = ["saucenao",'nao'].map(v => v + ' <reply/caption>')
 handler.tags = ["anime","tools"];
 handler.command = /^(saucenao|nao)$/i;
-handler.limit = true;
+handler.limit = 2;
 handler.register = false
 export default handler;

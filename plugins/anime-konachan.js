@@ -10,7 +10,7 @@ conn.sendFile(m.chat, pickRandom(konachan), null, `*Sukses*`, m)
 handler.help = ['konachan']
 handler.tags = ['nsfw', 'anime']
 handler.command = /^(konachan)$/i
-handler.premium = true
+handler.premium = 3
 handler.register = false
 export default handler
 

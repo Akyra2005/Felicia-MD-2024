@@ -35,7 +35,7 @@ let handler = async (m, {
 handler.help = ["carbon"]
 handler.tags = ["ai"]
 handler.command = /^carbon(ify)?$/i
-handler.limit = true
+handler.limit = 1
 export default handler
 
 const config = {

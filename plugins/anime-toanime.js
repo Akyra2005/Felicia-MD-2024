@@ -16,6 +16,6 @@ await conn.sendFile(m.chat, hasil, '', '*Sukses*', m)
 handler.help = ['toanime', 'jadianime']
 handler.tags = ['anime', 'ai']
 handler.command = /^(jadianime|toanime)$/i
-handler.premium = true
+handler.limit = 3
 handler.register = false
 export default handler

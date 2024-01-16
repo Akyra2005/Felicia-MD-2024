@@ -8,7 +8,7 @@ handler.command = /^(own-safe)$/i
 handler.tags = ['anime']
 handler.help = ['own-safe']
 export default handler
-handler.limit = true
+handler.limit = 1
 handler.register = false
 
 global.gamanaufal = [

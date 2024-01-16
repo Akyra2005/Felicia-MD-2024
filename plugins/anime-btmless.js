@@ -22,7 +22,7 @@ m.reply(wait)
 };
 handler.tags = [`anime`,`nsfw`]
 handler.help = handler.command = ['btmles']
-handler.limit = true
+handler.limit = 3
 handler.register = false
 handler.nsfw = true
 export default handler;

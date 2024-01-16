@@ -31,7 +31,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = handler.alias = ['yandere', 'yande'].map((v) => v + ' <query> [page]');
 handler.tags = ['downloader'];
 handler.command = /^(yandere|yande)$/i;
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler;
 

@@ -24,6 +24,6 @@ let handler = async (m, { conn, args, usedPrefix: _p }) => {
 handler.help = ['otaku'].map(v => v + ' <anime>')
 handler.tags = ['tools','anime']
 handler.command = /^(otaku|otakudesu)$/i
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler

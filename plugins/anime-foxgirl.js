@@ -13,6 +13,6 @@ handler.help = ['foxgirl']
 handler.tags = ['anime']
 handler.command = /^(foxgirl)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 
 export default handler

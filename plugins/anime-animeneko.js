@@ -10,7 +10,7 @@ let name = conn.getName(who)
 handler.help = ['neko2']
 handler.tags = ['anime', 'nsfw']
 handler.command = /^(neko2)$/i
-handler.limit = true
+handler.limit = 3
 handler.premium = false
 handler.nsfw = true
 
