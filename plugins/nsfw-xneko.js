@@ -25,6 +25,6 @@ handler.tags = ['nsfw','anime']
 
 handler.command = ['xneko']
 
-handler.limit = 2
+handler.limit = 3
 
 export default handler

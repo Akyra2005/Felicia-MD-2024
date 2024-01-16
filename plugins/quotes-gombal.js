@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
 handler.help = ["gombal"];
 handler.tags = ["quotes"];
 handler.command = /^(gombal)$/i;
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler;
 

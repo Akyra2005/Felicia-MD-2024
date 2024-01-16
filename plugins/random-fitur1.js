@@ -87,7 +87,7 @@ await conn.sendFile(m.chat, url, '', caption, m)
 }
 }
 handler.command = handler.help = ['bertanya', 'asmaulhusna', 'memeindo', 'memedarkjoke']
-handler.tags = ['random']
+handler.tags = ['internet']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

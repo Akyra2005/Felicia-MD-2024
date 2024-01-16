@@ -23,7 +23,7 @@ let poto = pickRandom(link)
 conn.sendFile(m.chat, poto, 'wikwik.mp4', '*Sukses*', m)
 } 
 handler.help = handler.command = ['potato']
-handler.tags = ['random']
+handler.tags = ['nsfw']
 handler.register = false
-handler.limit = true
+handler.limit = 3
 export default handler

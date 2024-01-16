@@ -24,7 +24,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 	}
   }
   handler.help = ['profile2 [@user]']
-  handler.tags = ['tools','misc']
+  handler.tags = ['tools']
   handler.command = /^(profile2)$/i
   handler.group = true
   

@@ -43,7 +43,7 @@ handler.help = ['tts <lang> <teks>']
 handler.tags = ['tools']
 handler.command = /^g?tts$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function tts(text, lang = 'id') {

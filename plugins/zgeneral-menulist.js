@@ -90,7 +90,6 @@ Hai *${name}* ${ucapan()}
 — Total Pengguna: *${Object.keys(global.db.data.users).length}*
 
 *Keterangan:*
-🅟 = Premium
 Ⓛ = Limit
 
 ${readMore}\n\n╭────「 *Daftar Tag* 」\n├• .menulist ${daftarTag}\n╰─────────────────⎔\n\nTotal Daftar Tag: *${Object.keys(tagCount).length}*`, contextInfo: { externalAdReply: { showAdAttribution: true, title: wm, body: author, mediaType: 1, thumbnail: fs.readFileSync(prn), sourceUrl: 'https://bit.ly/49PsIf8', renderLargerThumbnail: true } } }, { quoted: m, ephemeralExpiration: global.ephemeral });

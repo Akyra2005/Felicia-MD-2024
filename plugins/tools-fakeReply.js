@@ -27,7 +27,7 @@ handler.help = ['fake <text> @user <text2>']
 handler.tags = ['tools']
 handler.command = /^(fitnah|fakereply|fake)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function copy(obj) {

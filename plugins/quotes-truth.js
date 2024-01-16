@@ -13,7 +13,7 @@ m.reply(cin)
 handler.help = ['truth']
 handler.tags = ['quotes']
 handler.command = /^(truth)$/i
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function ucapan() {

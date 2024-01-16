@@ -22,5 +22,5 @@ if (!m.quoted) throw `Balas Stiker Dengan Perintah *${usedPrefix + command}*`
 handler.help = ['togif (reply media)']
 handler.tags = ['sticker']
 handler.command = /^togifs?$/i
-
+handler.limit = 1
 export default handler

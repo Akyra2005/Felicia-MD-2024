@@ -9,10 +9,10 @@ let handler = async (m, { conn }) => {
 	let tekk = `*Sukses*`
 conn.sendFile(m.chat, url, null, tekk.trim(), m)	
 }
-handler.tags = ['nsfw','anime','premium']
+handler.tags = ['nsfw','anime']
 handler.help = ['18cosplay']
 handler.command = /^(18cosplay)$/i
-handler.premium = true
+handler.limit = 3
 export default handler
 
 global.cosplay = [

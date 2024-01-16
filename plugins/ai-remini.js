@@ -136,7 +136,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ["remini"];
 handler.tags = ["ai"];
 handler.premium = false;
-handler.limit = true
+handler.limit = 1
 handler.register = false
 handler.command = ["remini"];
 export default handler;

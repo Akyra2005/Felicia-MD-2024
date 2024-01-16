@@ -10,7 +10,7 @@ handler.premium = false
 handler.register = false
 handler.fail = null
 
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function pickRandom(list) {

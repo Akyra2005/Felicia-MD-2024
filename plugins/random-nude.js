@@ -9,10 +9,10 @@ let handler = async (m, { conn }) => {
 	conn.sendFile(m.chat, url, null, '*Sukses*', m)
 }
 handler.command = /^(nude)$/i
-handler.tags = ['random']
+handler.tags = ['nsfw']
 handler.help = ['nude']
 handler.register = false
-handler.premium = true
+handler.limit = 3
 export default handler
 
 global.akira = [

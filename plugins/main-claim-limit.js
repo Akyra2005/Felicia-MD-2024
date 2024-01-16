@@ -14,18 +14,18 @@ let handler = async (m, { db }) => {
         return m.reply(`*Klaim Hanya Dapat Dilakukan 24 Jam Sekali*`)
     }
 
-    // Generate a random limit between 20 and 50
-    let claimedLimit = Math.floor(Math.random() * (50 - 20 + 1)) + 20
+    // Generate a random limit between 10 and 35
+    let claimedLimit = Math.floor(Math.random() * (35 - 10 + 1)) + 10; // Generates a number between 10 and 35
 
     // Update user data
-    user.limit = claimedLimit
+    user.limit += claimedLimit  // Add the claimed limit to the existing limit
     user.lastclaim = Date.now()
 
-    m.reply(`Berhasil Klaim *${claimedLimit} 🎟️ Limit*\n*Beli Premium Untuk Unlimited Limit*`)
+    m.reply(`Berhasil Klaim *${claimedLimit} Limit*\n*Beli Premium Untuk Unlimited Limit*`)
 }
 
 handler.help = ['claim']
-handler.tags = ['main']
+handler.tags = ['main','rpg']
 handler.command = /^claim$/i
 
 handler.group = true

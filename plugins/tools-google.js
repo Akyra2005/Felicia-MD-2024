@@ -25,6 +25,6 @@ let handler = async (m, { conn, command, args }) => {
 handler.help = ['google']
 handler.tags = ['internet']
 handler.command = /^googlef?$/i
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler

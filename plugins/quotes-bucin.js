@@ -4,7 +4,7 @@ let handler = async (m, { conn, usedPrefix }) =>
 handler.help = ["bucin"];
 handler.tags = ["quotes"];
 handler.command = /^(bucin)$/i;
-handler.limit = true
+handler.limit = 1
 
 export default handler;
 

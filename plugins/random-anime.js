@@ -16,5 +16,5 @@ handler.command = handler.help = ['akira', 'akiyama', 'anna', 'asuna', 'ayuzawa'
 
 handler.tags = ['anime']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

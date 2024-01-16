@@ -38,5 +38,5 @@ handler.help = ['randem'].map(v => v + ' <efek>')
 handler.tags = ['tools']
 handler.command = /^(randem)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

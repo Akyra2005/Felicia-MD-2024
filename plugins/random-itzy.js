@@ -14,5 +14,5 @@ handler.help = ['itzy','kpopitzy']
 handler.tags = ['internet']
 handler.command = /^(itzy|kpopitzy)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

@@ -10,10 +10,10 @@ let name = conn.getName(who)
 conn.sendFile(m.chat, pickRandom(gangbang), null, `*Sukses*`, m)
 }
 handler.help = ['gangbang']
-handler.tags = ['anime', 'nsfw', 'premium']
+handler.tags = ['anime', 'nsfw']
 handler.command = /^(gangbang)$/i
 
-handler.premium = true
+handler.limit = 3
 
 export default handler
 

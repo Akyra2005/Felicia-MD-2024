@@ -44,15 +44,14 @@ let defaultMenu = {
   before: `Hai *%name* ${ucapan()}
   
 — Nama Bot: *Felicia*
-— Versi: *52.2611.23*
+— Versi: *53.1601.24*
 — Server: *Railway.app*
 — Pengembang: *Keizha*
 — Total Pengguna: *${Object.keys(global.db.data.users).length}*
 — Menu Song: *Ryuk Theme*
-— Thumbnail: *Toho Animation*
+— Thumbnail: *Aerion*
 
 *Keterangan:*
-🅟 = Premium
 Ⓛ = Limit
 
 `,
@@ -265,7 +264,7 @@ const rm = mt[ri];
         text: '🕒',
         key: m.key }});
         
-await conn.reply(m.chat, '*Ulangi Permintaan Jika Menu Tidak Ditampilkan*', m)
+await conn.reply(m.chat, '*ALERT From FELICIA*\n\n```Bot Sedang Mengalami Keterlambatan, Mohon Kesabarannya Dan Hindari Pengiriman Pesan Berlebihan.```', m)
 await conn.sendMessage(m.chat, {
 	        video: fs.readFileSync('./media/thumb3.mp4'),
             mimetype: 'video/mp4',
@@ -279,7 +278,7 @@ await conn.sendMessage(m.chat, {
                     forwardingScore: 2023,
                     title: 'Felicia-MD',
                     thumbnailUrl: 'https://telegra.ph/file/dc5c0de9f002705526f82.jpg',
-                    sourceUrl: 'https://bit.ly/49PsIf8',
+                    sourceUrl: 'https://bit.ly/3O686WH',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                     mentionedJid: [m.sender]

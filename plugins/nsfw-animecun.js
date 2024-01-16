@@ -9,10 +9,10 @@ let name = conn.getName(who)
   conn.sendFile(m.chat, pickRandom(animecum), null, `*Sukses*`, m)
 }
 handler.help = ['animecum']
-handler.tags = ['anime', 'nsfw','premium']
+handler.tags = ['anime', 'nsfw']
 handler.command = /^(animecum)$/i
 handler.register = false
-handler.premium = true
+handler.limit = 3
 
 export default handler
 

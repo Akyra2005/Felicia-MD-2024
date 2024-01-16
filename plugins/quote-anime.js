@@ -11,5 +11,5 @@ handler.help = ['quotesanime']
 handler.tags = ['quotes']
 handler.command = /^(quotesanime|kataanime)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler 

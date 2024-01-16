@@ -18,7 +18,7 @@ let motivasii = pickRandom(global.motivasi)
 handler.help = ['motivasi']
 handler.tags = ['quotes']
 handler.command = /^(motivasi)$/i
-handler.limit = true
+handler.limit = 1
 handler.register = true
 export default handler
 

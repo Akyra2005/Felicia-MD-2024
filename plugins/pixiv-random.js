@@ -112,5 +112,5 @@ conn.sendFile(m.chat, foto, 'anu.png', data, m)
 handler.help = ['maid','waifu','marin-kitagawa','mori-calliope','raiden-shogun','oppai','selfies','uniform','ass','hentai','milf','oral','paizuri','ecchi','ero']
 handler.tags = ['anime']
 handler.command = /^(maid|waifu|marin-kitagawa|mori-calliope|raiden-shogun|oppai|selfies|uniform|ass|hentai|milf|oral|paizuri|ecchi|ero)$/i
-handler.limit = true
+handler.limit = 1
 export default handler

@@ -9,9 +9,9 @@ let handler = async (m, { conn }) => {
 	conn.sendFile(m.chat, url, null, '*Sukses*', m)
 }
 handler.help = ['paptt']
-handler.tags = ['nsfw', 'premium']
+handler.tags = ['nsfw']
 handler.command = /^(paptt)$/i
-handler.premium = true
+handler.limit = 3
 export default handler
 
 global.paptt = [

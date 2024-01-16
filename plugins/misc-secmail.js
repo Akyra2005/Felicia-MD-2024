@@ -69,10 +69,10 @@ Tanggal: *${v.date}*
     }
 }
 handler.help = ["secmail"]
-handler.tags = ["misc"]
+handler.tags = ["tools"]
 handler.command = /^(secmail)$/i
 handler.register = false
-handler.premium = true
+handler.limit = 2
 export default handler
 
 function msToTime(duration) {

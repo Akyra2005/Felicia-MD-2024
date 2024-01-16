@@ -191,7 +191,7 @@ await conn.relayMessage(m.chat,  {
       }}}}}}, {})
 }
 handler.help = ['ping', 'speed']
-handler.tags = ['info', 'tools']
+handler.tags = ['info']
 
 handler.command = /^(ping|speed|info)$/i
 export default handler

@@ -4,7 +4,7 @@ m.reply(`*“${pickRandom(global.galau)}”*`)
 handler.help = ["galau"];
 handler.tags = ["quotes"];
 handler.command = /^(galau)$/i;
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler;
 

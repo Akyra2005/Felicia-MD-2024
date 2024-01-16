@@ -22,7 +22,7 @@ throw '*E R R O R*'
 
 handler.help = ['cat']
 
-handler.tags = ['random']
+handler.tags = ['internet']
 
 handler.command = /^cat$/i
 handler.register = false

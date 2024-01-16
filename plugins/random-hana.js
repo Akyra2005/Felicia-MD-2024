@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 	conn.sendFile(m.chat, url, null, '*Sukses*', m)
 }
 handler.help = handler.command = ['hana']
-handler.tags = ['random']
+handler.tags = ['internet']
 export default handler
 
 global.akira =[

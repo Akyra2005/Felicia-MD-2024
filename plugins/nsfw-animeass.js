@@ -14,7 +14,7 @@ handler.help = ['animeass']
 handler.tags = ['anime', 'nsfw']
 handler.command = /^(animeass)$/i
 handler.register = false
-handler.limit = 2
+handler.limit = 3
 handler.premium = false
 
 export default handler

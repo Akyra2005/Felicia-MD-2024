@@ -155,7 +155,7 @@ ${listnya}`
     }
 }
 handler.command = handler.help = ["foto"]
-handler.tags = ['random']
+handler.tags = ['internet']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

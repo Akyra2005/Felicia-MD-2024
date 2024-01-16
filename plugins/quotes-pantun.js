@@ -11,7 +11,7 @@ m.reply(cin)
 handler.help = ['pantun']
 handler.tags = ['quotes']
 handler.command = /^(pantun)$/i
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler
 

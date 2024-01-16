@@ -14,7 +14,7 @@ handler.command = /^(inspect)$/i
 handler.help = ['inspect']
 handler.tags = ['tools']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 const extractGroupMetadata = (result) => {

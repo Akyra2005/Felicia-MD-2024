@@ -9,7 +9,7 @@ handler.help = ['fakta']
 handler.tags = ['quotes']
 handler.command = /^(fakta)$/i
 
-handler.limit = true
+handler.limit = 1
 
 export default handler
 

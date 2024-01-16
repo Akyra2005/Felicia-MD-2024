@@ -38,5 +38,5 @@ handler.tags = ['internet']
 
 handler.command = /^(kpop)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

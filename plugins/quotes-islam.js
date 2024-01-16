@@ -11,7 +11,7 @@ m.reply(islam)
 handler.help = ['q-islam']
 handler.tags = ['quotes']
 handler.command = /^(q-islam)$/i
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler
 

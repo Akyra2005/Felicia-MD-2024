@@ -54,5 +54,5 @@ let handler = async (m, {
 handler.help = ['removebg']
 handler.tags = ['tools']
 handler.command = /^(no|remove)bg$/i
-
+handler.limit = 2
 export default handler

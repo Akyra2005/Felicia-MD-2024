@@ -21,5 +21,6 @@ let json = await anu.json()
 await m.reply(`*here u go:* ${json.result}`)}
 
 handler.command = /^(readqr)$/i
-
+handler.tags = ['tools']
+handler.help = ['readqr']
 export default handler

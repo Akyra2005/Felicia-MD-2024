@@ -21,8 +21,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 
 handler.help = ['cmd'].map(v => 'set' + v + ' <teks>');
-handler.tags = ['database', 'premium'];
+handler.tags = ['database'];
 handler.command = ['setcmd'];
-handler.premium = true;
+handler.limit = 2
 handler.register = false
 export default handler;

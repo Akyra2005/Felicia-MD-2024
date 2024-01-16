@@ -20,8 +20,9 @@ let imagepdf = await toPDF(pages)
 await conn.sendMessage(m.chat, { document: imagepdf, jpegThumbnail, fileName: data.title.english + '.pdf', mimetype: 'application/pdf' }, { quoted: m })
 } 
 handler.command = /^(nhentai|nhpdf)$/i
-handler.tags = ['tools']
+handler.tags = ['tools','nsfw']
 handler.help = ['nhentai'].map(v => v + ' <code>')
+handler.limit = 1
 export default handler 
 
 async function nhentaiScraper(id) {

@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 	await conn.sendFile(m.chat, image, "wait.jpg", _result, m);
 };
 handler.help = ["whatanime"];
-handler.tags = ["anime"];
+handler.tags = ["tools"];
 handler.command = /^(wait|whatanime|source)$/i;
-handler.limit = true
+handler.limit = 1
 export default handler;

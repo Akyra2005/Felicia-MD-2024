@@ -13,10 +13,10 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
 
 }
 handler.help = ['emojimix2'].map(v => v + ' emot1|emot2>')
-handler.tags = ['misc']
+handler.tags = ['tools']
 handler.command = /^(emojimix2)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 const fetchJson = (url, options) => new Promise(async (resolve, reject) => {

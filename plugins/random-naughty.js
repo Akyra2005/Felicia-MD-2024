@@ -13,12 +13,10 @@ let handler = async (m, { conn }) => {
 }
 
 handler.command = ['naughty']
-
-handler.tags = ['random']
-
+handler.tags = ['nsfw']
 handler.help = ['naughty']
 handler.register = false
-handler.limit = true
+handler.limit = 3
 export default handler
 
 global.akira = [

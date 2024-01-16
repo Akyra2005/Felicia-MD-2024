@@ -37,5 +37,5 @@ URL: *${imageInfo.url}*
 handler.command = /^(xoral)$/i
 handler.tags = ['nsfw', 'anime']
 handler.help = ['xoral']
-handler.limit = 2
+handler.limit = 3
 export default handler

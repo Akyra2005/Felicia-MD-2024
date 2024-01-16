@@ -21,5 +21,5 @@ let handler = async (m, { conn}) => {
 handler.help = ['sauce <reply/send image>']
 handler.tags = ['tools']
 handler.command = /^(sauce)$/i
-
+handler.limit = 1
 export default handler

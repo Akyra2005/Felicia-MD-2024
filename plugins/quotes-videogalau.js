@@ -6,7 +6,7 @@ handler.tags = ["quotes"];
 handler.command = /^(videoquotes|videogalau)$/i;
 
 handler.premium = false;
-handler.limit = true;
+handler.limit = 1;
 
 handler.fail = null;
 handler.register = false;

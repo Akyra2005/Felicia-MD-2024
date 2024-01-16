@@ -37,5 +37,5 @@ handler.tags = ['internet'];
 
 handler.command = /^pokedex/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;

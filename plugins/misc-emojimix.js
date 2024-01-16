@@ -13,7 +13,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 	}
 }
 handler.help = ['emojimix']
-handler.tags = ['misc']
+handler.tags = ['tools']
 handler.command = /^(emojimix)$/i
 handler.register = false
 handler.limit = true

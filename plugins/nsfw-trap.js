@@ -23,5 +23,5 @@ await conn.sendFile(m.chat, json.url, 'trap.png', '*Sukses*', m)
 handler.help = ['trap']
 handler.tags = ['nsfw', 'anime']
 handler.command = ['trap']
-handler.limit = 2
+handler.limit = 3
 export default handler

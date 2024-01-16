@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ["hacker"];
 handler.tags = ["quotes"];
 handler.command = /^(heker|hacker|hekel)$/i;
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler;
 

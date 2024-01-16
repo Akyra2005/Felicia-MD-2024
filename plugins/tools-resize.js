@@ -51,5 +51,5 @@ Kompres: *${linkcompres}*`, m)
 handler.help = ['resize <width> <height> (reply|caption)']
 handler.tags = ['tools']
 handler.command = /^(resize)$/i
-
+handler.limit = 1
 export default handler

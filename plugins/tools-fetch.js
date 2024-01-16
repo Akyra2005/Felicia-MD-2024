@@ -69,5 +69,5 @@ handler.tags = ['tools'];
 handler.alias = ['get', 'fetch'];
 handler.command = /^(fetch|get)$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;

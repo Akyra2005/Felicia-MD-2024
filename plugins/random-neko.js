@@ -14,10 +14,8 @@ conn.sendFile(m.chat, neko, 'error.jpg', `*Sukses*`, m)}
 
 
 handler.command = /^(neko)$/i
-
 handler.tags = ['anime']
-
 handler.help = ['neko']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

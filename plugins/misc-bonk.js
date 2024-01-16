@@ -13,7 +13,7 @@ let handler = async (m, { conn, text }) => {
 }
 handler.command = /^(bonk)$/i
 handler.help = ['bonk']
-handler.tags = ['misc']
+handler.tags = ['internet']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

@@ -77,5 +77,5 @@ handler.help = ['playvideo'];
 handler.tags = ['downloader'];
 handler.command = /^playvideo$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

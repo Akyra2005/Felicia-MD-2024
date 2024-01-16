@@ -35,8 +35,8 @@ Ukuran: *${media.length} Byte*`);
   }
 }
 
-handler.help = ['upload']
+handler.help = ['tourl']
 handler.tags = ['tools']
 handler.command = /^(t|tourl)$/i
-handler.limit = true
+handler.limit = 1
 export default handler

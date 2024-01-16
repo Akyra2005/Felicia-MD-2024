@@ -5,9 +5,9 @@ async function handler(m, { isAdmin, isOwner }) {
             throw false
         }
     }
-    if (!m.quoted) throw 'balas pesannya!'
+    if (!m.quoted) throw '*Balas Pesan*'
     let q = this.serializeM(await m.getQuotedObj())
-    if (!q.quoted) throw 'pesan yang kamu balas tidak mengandung balasan!'
+    if (!q.quoted) throw '*Pesan Tersebut Tidak Mengandung Balasan*'
     await q.quoted.copyNForward(m.chat, true)
 }
 handler.help = ['q']

@@ -34,7 +34,7 @@ handler.help = ['logo'].map(v => v + ' <text>')
 handler.tags = ['maker']
 handler.command = ["logo", "logoget"]
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 function Logo(efek, teks1, teks2) {
     try {

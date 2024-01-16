@@ -30,8 +30,8 @@ Tautan: *${v.url}*`).join('\n\n')
 
 handler.command = /^(hentaisearch|searchhentai)$/i
 handler.help = ['hentaisearch','searchhentai']
-handler.tags = ['nsfw','premium']
-handler.premium = true
+handler.tags = ['nsfw']
+handler.limit = 3
 export default handler
 
 async function searchHentai(search) {

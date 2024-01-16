@@ -6,7 +6,7 @@ let handler = async (m, { conn, args }) => {
   conn.relayMessage(m.chat, { reactionMessage: proto.ReactionMessage.create({ key: q.key, text: args[0] }) }, { messageId: q.key.id })
 }
 handler.help = ['react']
-handler.tags = ['misc']
+handler.tags = ['tools']
 handler.command = /^(react)$/i
 
 export default handler

@@ -134,8 +134,8 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 	}
 };
 handler.help = ["remini2", "color", "hd", " hdr"];
-handler.tags = ["openai"];
-handler.limit = true;
+handler.tags = ["ai"];
+handler.limit = 1;
 handler.register = false
 handler.command = /^(hd|color|remini2|hdr)$/i;
 export default handler;

@@ -255,4 +255,5 @@ handler.command = handler.help = ['jalantikus-meme',
 'fajar-news']
 handler.tags = ['news']
 handler.register = false
+handler.limit = 1
 export default handler;

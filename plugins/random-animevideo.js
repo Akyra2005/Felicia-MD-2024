@@ -1,12 +1,12 @@
 let handler = async (m, { conn, usedPrefix, command }) => {
 		
-			await conn.sendMessage(m.chat, { video: { url: dir[Math.floor(Math.random() * dir.length)] }, caption: `_Random Story Anime_` }, { quoted: m })
+			await conn.sendMessage(m.chat, { video: { url: dir[Math.floor(Math.random() * dir.length)] }, caption: `*Random Anime Stories*` }, { quoted: m })
 	}
 
 handler.help = ['storyanime']
 handler.tags = ['anime']
 handler.command = /^(stor(i|y)a?nime|a?nimestor(i|y))$/i
-handler.limit = true
+handler.limit = 1
 
 export default handler
 

@@ -23,7 +23,7 @@ handler.help = ['ssweb','sspc','sshp','sstablet'].map(v => v + ' <url>')
 handler.tags = ['internet']
 handler.command = /^(ssweb|sstablet|sspc|sshp)$/i
 
-handler.limit = false
+handler.limit = 1
 
 export default handler
 

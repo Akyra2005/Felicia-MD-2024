@@ -16,25 +16,20 @@ Keuntungan?
 
 ——————————————————————————
 
-*Harga PREMIUM Bot:*
-07 Hari = Rp 4.000
-30 Hari = Rp 19.000
-Permanen = Rp 19.000
-
-Keuntungan?
-*Limit Tak Terbatas*
-*Akses Ke Fitur Premium*
+*Harga LIMIT Bot:*
+150 Limit = Rp 7.000
+240 Limit = Rp 10.000
 
 ——————————————————————————
 
-Paket Hemat Premium + Rental
-30 Hari = Rp 35.000
-Permanen = Rp 35.000
+Paket Hemat Limit + Rental
+30 Hari + 240 Limit= Rp 16.000
 
 ——————————————————————————
 
 *Tertarik? Atau Tanya2 Dulu?*
 *Kontak Admin Pemilik Bot*
+— WhatsApp: *wa.me/6281333921094*
 — Telegram: *t.me/Kusanali_6*
 — MiChat: *085163083750*
 — Instagram: *www.instagram.com/kusanali_6/*
@@ -44,6 +39,6 @@ await m.reply(tekss)
 await apivisit
 }
 handler.help = ['sewa','premium']
-handler.tags = ['info']
+handler.tags = ['info','main']
 handler.command = /^(rental|iklan|sewabot|sewa)$/i
 export default handler

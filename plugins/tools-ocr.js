@@ -15,5 +15,5 @@ let handler = async (m, { conn }) => {
 handler.help = ['ocr']
 handler.tags = ['tools']
 handler.command = /^ocr$/i
-
+handler.limit = 1
 export default handler
