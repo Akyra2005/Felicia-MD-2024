@@ -73,7 +73,7 @@ Penjelasan: \n*${addNewline(item.describe)}*
 handler.help = handler.command = ['modapk']
 handler.tags = ['downloader']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 /* New Line */

@@ -21,6 +21,6 @@ let handler = async (m, { conn, command }) => {
 handler.help = ['lockcmd', 'unlockcmd'];
 handler.tags = ['database'];
 handler.command = /^(un)?lockcmd$/i;
-handler.premium = true;
+handler.limit = 4
 handler.register = false
 export default handler;

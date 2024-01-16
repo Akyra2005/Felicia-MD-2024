@@ -18,5 +18,5 @@ handler.help = ['tebakangka <angka>']
 handler.tags = ['game']
 handler.command = /^(tebakangka)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

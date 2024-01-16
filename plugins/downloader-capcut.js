@@ -1,6 +1,6 @@
 import { capcutdl } from '../lib/capcut.js'
 let handler = async (m, { conn, args, text, usedPrefix, command }) => { 
-  if (!args[0]) throw `Contoh: *${usedPrefix+command} https://www.capcut.com/watch/7238819486680321281?use_new_ui=1&template_id=7238819486680321281&share_token=ce40538b-b349-41da-869d-73d99b78287e&enter_from=template_detail&region=ID&language=in&platform=copy_link&is_copy_link=1*`;
+  if (!args[0]) throw `Contoh: *${usedPrefix+command} Tautan*`;
   let data = await capcutdl(text);
   await conn.sendMessage(m.chat, { react: { text: "⏳", key: m.key } });
   let cap = `*PENGUNDUHAN CAPCUT*
@@ -16,5 +16,5 @@ handler.help = ['capcut'].map(v => v + ' <url>');
 handler.tags = ['downloader'];
 handler.command = /^(capcut)$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;

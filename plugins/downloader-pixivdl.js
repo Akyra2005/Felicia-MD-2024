@@ -16,7 +16,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = handler.alias = ['pixiv']
 handler.tags = ['downloader']
 handler.command = /^(pixiv)$/i
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler
 

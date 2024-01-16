@@ -5,10 +5,10 @@ let handler = async (m, { conn, command }) => {
 	conn.sendFile(m.chat, url, 'anu.jpg', '*Sukses*', m)
 }
 handler.command = /^(cogan)$/i
-handler.tags = ['random']
+handler.tags = ['asupan']
 handler.help = ['cogan']
 handler.premium = false
 handler.register = false
-handler.limit = true
+handler.limit = 1
  
 export default handler

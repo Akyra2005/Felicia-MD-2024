@@ -60,10 +60,10 @@ try {
     }
 }
 handler.help = ["animes"]
-handler.tags = ['internet']
+handler.tags = ['anime']
 handler.command = ["animes"]
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function ArrClean(str) {

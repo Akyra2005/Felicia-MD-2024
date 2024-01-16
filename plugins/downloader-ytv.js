@@ -33,5 +33,5 @@ handler.help = ['ytv']
 handler.tags = ['downloader']
 handler.command = /^fgmp4|dlmp4|getvid|yt(v|mp4)?$/i 
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

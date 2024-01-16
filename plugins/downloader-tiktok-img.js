@@ -6,7 +6,7 @@ import axios from 'axios'
 import cheerio from 'cheerio'
 
 let handler = async(m, { conn, text, args, command, usedPrefix}) => {
-if (!text) throw 'Format: *tiktokimg Tautan*'
+if (!text) throw 'Format: *.tiktokimg Tautan*'
 
 let url = `https://dlpanda.com/id?url=${text}&token=G7eRpMaa`
 
@@ -37,6 +37,6 @@ handler.help = ['tiktokimg / ttimg <url>']
 handler.tags = ['downloader']
 handler.command = /^(ttimg|tiktokimg)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 
 export default handler

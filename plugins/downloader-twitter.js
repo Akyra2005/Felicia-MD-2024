@@ -16,7 +16,7 @@ handler.tags = ['downloader']
 handler.alias = ['twt', 'twtdl', 'twitter', 'twitterdl']
 handler.command = /^((twt|twitter)(dl)?)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 async function twitterDl(url) {

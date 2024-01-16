@@ -40,6 +40,6 @@ Hubungi Kami Jika Anda memiliki pertanyaan tentang ketentuan dan persyaratan ini
 await apivisit
 }
 handler.help = ['rules']
-handler.tags = ['main']
+handler.tags = ['main','info']
 handler.command = /^(rules|peraturan)$/i
 export default handler

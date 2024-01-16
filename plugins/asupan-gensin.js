@@ -2,12 +2,11 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
 	let url = gensin[Math.floor(Math.random() * gensin.length)]
-	conn.sendFile(m.chat, url, 'gensin.jpg', '_Nih Kak_', m)
+	conn.sendFile(m.chat, url, 'gensin.jpg', '*Sukses*', m)
 }
 handler.command = /^(genshin2)$/i
-handler.tags = ['random']
+handler.tags = ['asupan']
 handler.help = ['genshin2']
-handler.limit = false
 handler.register = false
 export default handler
 

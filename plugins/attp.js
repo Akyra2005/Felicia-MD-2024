@@ -9,6 +9,6 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['attp <teks>']
 handler.tags = ['sticker']
 handler.command = /^attp$/i
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler 

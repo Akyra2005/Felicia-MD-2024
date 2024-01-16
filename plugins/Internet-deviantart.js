@@ -77,7 +77,7 @@ handler.help = ["deviantart"]
 handler.tags = ["internet"]
 handler.command = /^(deviantart)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 2
 export default handler
 
 /* New Line */

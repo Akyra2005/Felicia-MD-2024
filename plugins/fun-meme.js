@@ -19,7 +19,7 @@ let handler = async (m, { conn }) => {
 };
 
 handler.help = ['meme'];
-handler.tags = ['fun'];
+handler.tags = ['internet'];
 handler.command = /^(meme)$/i;
 handler.limit = true;
 

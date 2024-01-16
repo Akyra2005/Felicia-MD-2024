@@ -53,7 +53,7 @@ handler.menu = ['gcl'];
 handler.tags = ['owner'];
 handler.command = /^(gcl)$/i;
 handler.owner = true
-handler.limit = true
+handler.limit = 1
 export default handler;
 
 function formatTime(timestamp) {

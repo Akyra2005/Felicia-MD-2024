@@ -21,5 +21,5 @@ handler.help = ['kbbi <teks>']
 handler.tags = ['internet']
 handler.command = /^kbbi$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

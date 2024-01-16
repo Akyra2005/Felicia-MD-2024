@@ -117,7 +117,7 @@ handler.help = ["tiktok"]
 handler.tags = ["downloader"]
 handler.command = /^t(iktok|t(dl)?)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 //@xct007/tiktok-scraper

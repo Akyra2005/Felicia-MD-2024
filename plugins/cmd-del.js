@@ -18,8 +18,8 @@ let handler = async (m, { conn, text }) => {
 };
 
 handler.help = ['delcmd <teks>'];
-handler.tags = ['database', 'premium'];
+handler.tags = ['database'];
 handler.command = /^delcmd$/i;
-handler.premium = true;
+handler.premium = 4;
 handler.register = false
 export default handler;

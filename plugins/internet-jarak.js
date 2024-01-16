@@ -11,7 +11,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['jarak']
 handler.tags = ['internet']
 handler.command = ['jarak']
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler
 

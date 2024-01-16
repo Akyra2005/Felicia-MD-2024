@@ -26,5 +26,5 @@ handler.help = ['soundcloud'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(soundcloud|scdl)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

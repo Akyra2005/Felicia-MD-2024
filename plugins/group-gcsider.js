@@ -45,7 +45,7 @@ handler.help = ['gcsider']
 handler.tags = ['group']
 handler.command = /^(gcsider)$/i
 handler.group = true
-handler.limit = 10
+handler.limit = 4
 export default handler
 
 const more = String.fromCharCode(8206)

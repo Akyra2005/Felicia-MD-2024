@@ -505,6 +505,6 @@ conn.exam[from] = [
 
 handler.tags = ['game']
 handler.command = /^examipa$/i
-handler.help = ['examIpa']
+handler.help = ['examipa']
 
 export default handler

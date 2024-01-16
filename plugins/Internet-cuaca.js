@@ -27,5 +27,5 @@ handler.help = ['cuaca']
 handler.tags = ['internet']
 handler.command = /^(cuaca|weather)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

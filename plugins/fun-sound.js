@@ -68,7 +68,7 @@ ${usedPrefix + command} black cover`;
 
 handler.help = ['sound', 'mangkane', 'ringtone'];
 handler.command = ['sound', 'mangkane', 'ringtone', 'ringtoneget'];
-handler.tags = ['random'];
+handler.tags = ['internet'];
 
 export default handler;
 

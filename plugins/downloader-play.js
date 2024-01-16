@@ -142,7 +142,7 @@ handler.help = ['play', 'play2']
 handler.tags = ['downloader']
 handler.command = /^play2?$/i
 handler.register = false
-handler.limit = true
+handler.limit = 2
 export default handler
 
 async function search(query, options = {}) {

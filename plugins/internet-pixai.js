@@ -38,7 +38,7 @@ Penonton: *${output.artwork.views}*
 handler.help = ['pixai']
 handler.tags = ['internet']
 handler.command = ['pixai']
-
+handler.limit = 1
 export default handler
 
 const baseURL = "https://api.pixai.art/graphql";

@@ -52,5 +52,5 @@ handler.command = /^(cj|clickjacking|clickjack|clickjacker)?$/i;
 handler.tags = ['internet'];
 handler.help = ['cj <URL>'];
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;

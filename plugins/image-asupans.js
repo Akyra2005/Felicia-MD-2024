@@ -39,9 +39,9 @@ try {
     }
 }
 handler.help = ["asupans"]
-handler.tags = ['internet']
+handler.tags = ['asupan']
 handler.command = ["asupans"]
-
+handler.limit = 1
 export default handler
 
 function ArrClean(str) {

@@ -17,6 +17,7 @@ if (!text) throw "Format: *.call Nomor*"
   }
     }
 handler.help = ['call']
-handler.tags = ['info']
+handler.tags = ['owner']
 handler.command = ['call']
+handler.owner = true
 export default handler

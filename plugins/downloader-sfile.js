@@ -22,7 +22,7 @@ handler.help = handler.alias = ['sfile'].map(v => v + ' <query / url>')
 handler.tags = ['downloader']
 handler.command = /^(sfile)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 async function sfileSearch(query, page = 1) {

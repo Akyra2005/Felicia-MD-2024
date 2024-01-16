@@ -7,9 +7,8 @@ let handler = async (m, { conn, args }) => {
   conn.sendFile(m.chat, res, 'xynz.webp', `*Sukses*`, m, false)
 }
 handler.help = ['attp2 <teks>']
-handler.tags = ['sticker' , 'premium']
+handler.tags = ['sticker']
 handler.command = /^(attp2)$/i
-handler.limit = true
-handler.premium = true
+handler.limit = 1
 handler.register = false
 export default handler

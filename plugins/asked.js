@@ -542,6 +542,6 @@ setTimeout(() => { conn.sendMessage(m.chat, { delete: pidio.key }); }, 900000); 
 
 handler.help = handler.command = ['bokep2'];
 handler.tags = ['nsfw']
-handler.premium = true
+handler.limit = 3
 handler.register = false
 export default handler;

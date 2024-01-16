@@ -21,6 +21,6 @@ var handler = async (m, { conn, text }) => {
 handler.help = ['mahasiswa']
 handler.tags = ['internet']
 handler.command = /^(mahasiswa)$/i
-handler.limit = true
+handler.limit = 1
 
 export default handler

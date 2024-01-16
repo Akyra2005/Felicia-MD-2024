@@ -20,7 +20,7 @@ let stiker = await sticker(null, global.API(`https://telegra.ph/file/02c3eaa5dd4
     title: `Memproses Permintaan...`,
     body: botdate,
     thumbnail: await(await fetch(pp)).buffer(),
-    sourceUrl: 'http://bit.ly/49PsIf8'
+    sourceUrl: 'https://bit.ly/3O686WH'
      }}
   })
   
@@ -30,9 +30,9 @@ await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
          externalAdReply: { showAdAttribution: true,
- mediaUrl: 'http://bit.ly/49PsIf8',
+ mediaUrl: 'https://bit.ly/3O686WH',
     mediaType: 2, 
-    description: 'http://bit.ly/49PsIf8',
+    description: 'https://bit.ly/3O686WH',
     title: "Mainkan Musik",
     body: wm,
     thumbnail: await (await fetch('https://telegra.ph/file/21ab29d2d155bda72dd15.jpg')).buffer(),
@@ -44,5 +44,5 @@ ptt: false, seconds: 0,contextInfo: {
 handler.help = ['kane1','kane2','kane3','kane4','kane5','kane6','kane7','kane8','kane9','kane10','kane11','kane12','kane13','kane14','kane15','kane16','kane17','kane18','kane19','kane20','kane21','kane22','kane23','kane24']
 handler.tags = ['sound']
 handler.command = /^(kane1|kane2|kane3|kane4|kane5|kane6|kane7|kane8|kane9|kane10|kane11|kane12|kane13|kane14|kane15|kane16|kane17|kane18|kane19|kane20|kane21|kane22|kane23|kane24)$/i
-handler.limit = true
+handler.limit = 1
 export default handler

@@ -67,7 +67,7 @@ handler.help = ["halodoc"]
 handler.tags = ["internet"]
 handler.command = /^(halodoc)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 /* New Line */

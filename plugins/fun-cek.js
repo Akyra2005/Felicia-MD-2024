@@ -69,7 +69,7 @@ conn.sendMessage(m.chat, { text: 'Pertanyaan: *' + command + '*\nNama: ' + `@${m
     }
   }
 };
-handler.tags = ['fun']
+handler.tags = ['fun','game']
 handler.help = handler.command = ['goblokcek', 'jelekcek', 'gaycek', 'rate', 'lesbicek', 'gantengcek',
 'cantikcek',
 'begocek',

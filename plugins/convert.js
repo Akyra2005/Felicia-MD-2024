@@ -21,7 +21,7 @@ let handler = async (m, {
 handler.tags = ["tools"]
 handler.command = handler.help = ["convert"]
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
     function Calculate(type, val){

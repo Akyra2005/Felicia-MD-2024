@@ -39,7 +39,7 @@ handler.help = ['igphoto'].map(v => v + ' <url>');
 handler.tags = ['downloader'];
 handler.command = /^(ig(photo(s)?|p)?|igf(oto)?)$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;
 
 async function igeh(url) {

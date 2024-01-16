@@ -33,5 +33,5 @@ handler.tags = ['downloader']
 handler.help = ['ytmp3']
 handler.command = /^yta|ytmp3|youtubemp3$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

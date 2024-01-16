@@ -37,7 +37,7 @@ handler.help = ['xnxx'].map(v => v + ' <query/url>')
 handler.tags = ['nsfw']
 handler.command = ['xnxxsearch', 'xnxx'] 
 handler.premium = false
-handler.limit = true
+handler.limit = 3
 handler.register = false
 
 export default handler

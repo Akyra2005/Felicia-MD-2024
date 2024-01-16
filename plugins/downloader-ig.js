@@ -34,6 +34,6 @@ handler.command = /^(igdl|ig)$/i
 handler.tags = ['downloader']
 handler.help = ['instagram','ig']
 handler.premium = false
-handler.limit = true
+handler.limit = 1
 handler.register = false
 export default handler

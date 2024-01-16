@@ -70,10 +70,10 @@ Tautan Pengarang: *${v.author.url}*
         await conn.relayMessage(m.chat, msg.message, {})
 }
 handler.help = ["", "earch"].map(v => "yts" + v + " <pencarian>")
-handler.tags = ["tools"]
+handler.tags = ["downloader"]
 handler.command = /^y(outubesearch|ts(earch)?)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function formatNumber(num) {

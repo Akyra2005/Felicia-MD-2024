@@ -36,7 +36,7 @@ ${sticker.mentionedJid.length > 0 ? `Sebutan CMD:\n*${cmdMentions}*` : ''}`.trim
 handler.help = ['infocmd'];
 handler.tags = ['database'];
 handler.command = ['infocmd'];
-handler.register = true
+handler.register = false
 export default handler;
 
 /**

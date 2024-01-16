@@ -74,7 +74,7 @@ handler.help = ["dafonts"]
 handler.tags = ["internet"]
 handler.command = /^(dafonts)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 2
 export default handler
 
 /* New Line */

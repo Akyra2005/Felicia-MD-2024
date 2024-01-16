@@ -10,6 +10,6 @@ let handler = async (m, { conn, command }) => {
 handler.command = /^(bokep3)$/i
 handler.tags = ['nsfw']
 handler.help = ['bokep3']
-handler.premium = true
+handler.limit = 3
 handler.register = false
 export default handler

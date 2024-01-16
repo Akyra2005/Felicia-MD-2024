@@ -58,5 +58,5 @@ handler.help = ['randomuser'];
 handler.tags = ['internet', 'tools'];
 handler.command = /^(randomuser|randuser|ruser|ranuser|rauser|rndmusr)$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 2
 export default handler;

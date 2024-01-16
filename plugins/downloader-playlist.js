@@ -40,5 +40,5 @@ handler.help = ['playlist *<teks>*'];
 handler.tags = ['downloader'];
 handler.command = /^playlist|playlist2$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;

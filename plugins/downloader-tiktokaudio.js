@@ -58,8 +58,9 @@ await conn.sendFile(m.chat, cer.music.play_url, 'Di Unduh Oleh Felicia-MD.mp3', 
   }
 }
 handler.tags = ['downloader']
+handler.help = ['tiktokaudio']
 handler.command = /^(tiktokaudio)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 
 export default handler

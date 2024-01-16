@@ -8,7 +8,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 handler.help = ['wallpaper' + ' <query>']
 handler.tags = ['downloader']
 handler.register = false
-handler.limit = true
+handler.limit = 1
 handler.command = /^(wallpaper)$/i
 
 export default handler

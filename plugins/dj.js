@@ -20,7 +20,7 @@ let stiker = await sticker(null, global.API(`https://telegra.ph/file/02c3eaa5dd4
     title: `Memproses Permintaan...`,
     body: wm2,
     thumbnail: await(await fetch(pp)).buffer(),
-    sourceUrl: 'http://bit.ly/49PsIf8'
+    sourceUrl: 'https://bit.ly/3O686WH'
      }}
   })
   
@@ -30,9 +30,9 @@ await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
          externalAdReply: { showAdAttribution: true,
- mediaUrl: 'http://bit.ly/49PsIf8',
+ mediaUrl: 'https://bit.ly/3O686WH',
     mediaType: 2, 
-    description: 'http://bit.ly/49PsIf8',
+    description: 'https://bit.ly/3O686WH',
     title: "Mainkan Musik",
     body: wm,
     thumbnail: await (await fetch('https://telegra.ph/file/21ab29d2d155bda72dd15.jpg')).buffer(),
@@ -100,11 +100,11 @@ handler.help = ['sound1', 'sound2', 'sound3', 'sound4', 'sound5', 'sound6',
 'sound62',
 'sound63',
 'sound64','sound65','sound66','sound67','sound68','sound69','sound70','sound71','sound72','sound73','sound74','sound75','sound76','sound77','sound78','sound79','sound80','sound81','sound82','sound83','sound84','sound85','sound86','sound87','sound88','sound89','sound90','sound91','sound92','sound93','sound94','sound95','sound96','sound97','sound98','sound99','sound100','sound101','sound102','sound103','sound104','sound105','sound106','sound107','sound108','sound109','sound110','sound111','sound112','sound113','sound114','sound115','sound116','sound117','sound118','sound119']
-handler.tags = ['d - j']
+handler.tags = ['dj']
 
 handler.command = /^(sound1|sound2|sound3|sound4|sound5|sound6|sound7|sound8|sound9|sound10|sound11|sound12|sound13|sound14|sound15|sound16|sound17|sound18|sound19|sound20|sound21|sound22|sound23|sound24|sound25|sound26|sound27|sound28|sound29|sound30|sound31|sound32|sound33|sound34|sound35|sound36|sound37|sound38|sound39|sound40|sound41|sound42|sound43|sound44|sound45|sound46|sound47|sound48|sound49|sound50|sound51|sound52|sound53|sound54|sound55|sound56|sound57|sound58|sound59|sound60sound61|sound62|sound63|sound64|sound65|sound66|sound67|sound68|sound69|sound70|sound71|sound72|sound73|sound74|sound75|sound76|sound77|sound78|sound79|sound80|sound81|sound82|sound83|sound84|sound85|sound86|sound87|sound88|sound89|sound90|sound91|sound92|sound93|sound94|sound95|sound96|sound97|sound98|sound99|sound100|sound101|sound102|sound103|sound104|sound105|sound106|sound107|sound108|sound109|sound110|sound111|sound112|sound113|sound114|sound115|sound116|sound117|sound118|sound119)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 let stikerhuuu = [
  "https://telegra.ph/file/fa2bbea0f7de2575cf027.png",//patrick huu

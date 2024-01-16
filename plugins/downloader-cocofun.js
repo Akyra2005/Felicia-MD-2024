@@ -19,5 +19,5 @@ handler.help = ['cocofun'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^(cocofun|cocofundl)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

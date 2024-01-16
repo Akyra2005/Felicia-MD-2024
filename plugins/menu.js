@@ -30,7 +30,7 @@ before: `*Hai Saya Adalah Felicia-MD*
 ╭──━─━─━─━─━─━─━─━─━─━─━─━❐
 ╰ ⎔ ─ *Get to Know Me*
 ━ ⎔ Nama: *Felicia*
-━ ⎔ Versi: *53.3012.23*
+━ ⎔ Versi: *54.1601.24*
 ━ ⎔ Rilis: *25-11-2021*
 ━ ⎔ Server: *Railway.app*
 ━ ⎔ Pengembang: *Keizha*

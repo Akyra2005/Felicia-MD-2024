@@ -10,7 +10,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   if (!effects.includes(effect)) throw `Format: *.filter Efek*
 
 *Daftar Efek:*
-${effects.map(effect => `_> ${effect}_`).join('\n')}
+${effects.map(effect => `*- ${effect}*`).join('\n')}
 `.trim()
     if (/image/g.test(mime) && !/webp/g.test(mime)) {
     	try {
@@ -29,7 +29,7 @@ ${effects.map(effect => `_> ${effect}_`).join('\n')}
 }
 
 handler.help = ['filter']
-handler.tags = ['internet']
+handler.tags = ['ai']
 handler.command = /^(filter)$/i
 handler.register = false
 handler.limit = true

@@ -15,7 +15,7 @@ handler.tags = ['tools']
 handler.command = ['wallpapers', 'wp']
 handler.diamond = true
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 function pickRandom(list) {

@@ -40,5 +40,5 @@ handler.help = ["mega"]
 handler.tags = ["downloader"]
 handler.command = /^(mega)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

@@ -14,5 +14,5 @@ handler.help = ['joke'];
 handler.tags = ['internet', 'fun'];
 handler.command = /^(joke|lelucon)$/i;
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler;

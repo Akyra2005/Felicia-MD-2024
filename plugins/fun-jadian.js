@@ -20,7 +20,7 @@ let ps = groupMetadata.participants.map(v => v.id)
     }
     
 }
-handler.tags = ['main', 'fun']
+handler.tags = ['fun']
 handler.command = handler.help = ['jodohnya', 'jodohku']
 handler.register = false
 handler.group = true

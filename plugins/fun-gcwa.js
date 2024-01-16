@@ -24,8 +24,9 @@ URL: *${item.currentLink}*`
 }
 handler.help = ["gcwa"].map(v => v + " <apa>")
 handler.command = ["gcwa"]
-handler.tags = ["random"]
+handler.tags = ["tools"]
 handler.register = false
+handler.limit = 1
 export default handler
 
 function transformData(data) {

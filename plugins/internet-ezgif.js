@@ -102,7 +102,7 @@ handler.help = ["ezgif"]
 handler.tags = ["internet"]
 handler.command = /^(ezgif)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 /* New Line */

@@ -10,8 +10,7 @@ let handler = async (m, { conn }) => {
     await conn.sendFile(m.chat, img, '', '*Sukses*', m, 0, { thumbnail: await (await fetch(img)).buffer() })
 }
 handler.help = ['blackpink']
-handler.tags = ['random']
-handler.limit = false
+handler.tags = ['asupan']
 handler.register = false
 handler.command = /^(bpink|bp|blackpink)$/i
 

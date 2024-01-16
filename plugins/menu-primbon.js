@@ -310,5 +310,5 @@ handler.help = handler.command = ['nomorhoki',
 'masasubur',
 'zodiak', 
 'shio']
-handler.limit = true
+handler.limit = 1
 export default handler

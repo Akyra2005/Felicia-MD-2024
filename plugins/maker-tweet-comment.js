@@ -34,5 +34,5 @@ handler.help = ["tweetc"]
 handler.tags = ["maker"]
 handler.command = ["tweetc"]
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler

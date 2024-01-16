@@ -13,11 +13,8 @@ conn.sendFile(m.chat, json.url, '', '*Sukses*', m)
 }
 
 handler.help = ['bocil']
-
-handler.tags = ['random']
-handler.limit = false
+handler.tags = ['asupan']
 handler.register = false
-
 handler.command = /^(bocil)$/i
 
 export default handler

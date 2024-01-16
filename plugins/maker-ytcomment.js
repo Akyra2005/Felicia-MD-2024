@@ -20,6 +20,6 @@ handler.tags = ['maker']
 
 handler.command = /^(ytcomment)$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 
 export default handler

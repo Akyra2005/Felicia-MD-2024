@@ -21,7 +21,7 @@ let stiker = await sticker(null, global.API(`https://telegra.ph/file/02c3eaa5dd4
     title: `Memproses Permintaan...`,
     body: botdate,
     thumbnail: await(await fetch(pp)).buffer(),
-    sourceUrl: 'http://bit.ly/49PsIf8'
+    sourceUrl: 'https://bit.ly/3O686WH'
      }}
   })
   
@@ -31,9 +31,9 @@ await conn.sendFile(m.chat, audio, 'error.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: false, seconds: 0,contextInfo: {
          externalAdReply: { showAdAttribution: true,
- mediaUrl: 'http://bit.ly/49PsIf8',
+ mediaUrl: 'https://bit.ly/3O686WH',
     mediaType: 2, 
-    description: 'http://bit.ly/49PsIf8',
+    description: 'https://bit.ly/3O686WH',
     title: "Mainkan Musik",
     body: wm,
     thumbnail: await (await fetch('https://telegra.ph/file/21ab29d2d155bda72dd15.jpg')).buffer(),
@@ -46,5 +46,5 @@ ptt: false, seconds: 0,contextInfo: {
 handler.help = ['kane25','kane26','kane27','kane28','kane29','kane30','kane31','kane32','kane33','kane34','kane35','kane36','kane37','kane38','kane39','kane40','kane41','kane42','kane43','kane44','kane45','kane46','kane47','kane48','kane49','kane50','kane51','kane52','kane53','kane54']
 handler.tags = ['sound']
 handler.command = /^(kane25|kane26|kane27|kane28|kane29|kane30|kane31|kane32|kane33|kane34|kane35|kane36|kane37|kane38|kane39|kane40|kane41|kane42|kane43|kane44|kane45|kane46|kane47|kane48|kane49|kane50|kane51|kane52|kane53|kane54)$/i
-handler.limit = true
+handler.limit = 1
 export default handler

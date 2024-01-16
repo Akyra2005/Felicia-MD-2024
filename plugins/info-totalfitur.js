@@ -27,6 +27,6 @@ let txt = ``
       }}}}}}, {})
 }
 handler.help = ['totalfitur']
-handler.tags = ['main']
+handler.tags = ['info']
 handler.command = /^(totalfitur)$/i
 export default handler

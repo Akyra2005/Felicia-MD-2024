@@ -14,7 +14,7 @@ handler.help = ['danbooru'].map(v => v + ' <url>')
 handler.tags = ['downloader']
 handler.command = /^danbooru$/i
 handler.register = false
-handler.limit = true
+handler.limit = 1
 export default handler
 
 export async function danbooruDl(url) {
