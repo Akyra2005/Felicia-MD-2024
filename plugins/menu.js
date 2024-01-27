@@ -23,7 +23,16 @@ import os from "os"
 import fs from "fs"
 import fetch from "node-fetch"
 import { pickRandom } from '../lib/other-function.js'
-
+let stats = Object.entries(db.data.stats).map(([key, val]) => {
+    let name = Array.isArray(plugins[key]?.help) ? plugins[key]?.help?.join(' & ') : plugins[key]?.help || key 
+    if (/exec/.test(name)) return
+    return { name, ...val }
+  })
+  stats = stats.sort((a, b) => b.total - a.total)
+  let txt = stats.slice(0, 3).map(({ name, total, last }, idx) => {
+  	if (name.includes('-') && name.endsWith('.js')) name = name.split('-')[1].replace('.js', '')
+      return `⎔ ${idx + 1}) - Perintah: *${name}*\n│     Digunakan: *${total}x*\n│     Terakhir Digunakan: *${getTime(last)}*`
+  }).join`\n│\n`
 const defaultMenu = {
 before: `*Hai Saya Adalah Felicia-MD*
 
@@ -48,7 +57,11 @@ before: `*Hai Saya Adalah Felicia-MD*
 ⎔ *— Grup WhatsApp: https://bit.ly/3O686WH*
 ╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
 
-
+╭ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
+│    *Top 3 Fitur Sering Digunakan*
+│
+${txt}
+╰ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 `,
 }
 let handler = async (m, {
@@ -293,7 +306,7 @@ let nm = pickRandom(global.Pallmenu)
         // Biasa
    await conn.relayMessage(m.chat,  {
     requestPaymentMessage: {
-      currencyCodeIso4217: 'JPY',
+      currencyCodeIso4217: 'IDR',
       amount1000: 10 * 10000000,
       requestFrom: '0@s.whatsapp.net',
       noteMessage: {
@@ -354,4 +367,25 @@ function ucapan() {
         res = "Good Night 🌙"
     }
     return res
+}
+
+export function parseMs(ms) {
+  if (typeof ms !== 'number') throw 'Parameter must be filled with number'
+  return {
+    days: Math.trunc(ms / 86400000),
+    hours: Math.trunc(ms / 3600000) % 24,
+    minutes: Math.trunc(ms / 60000) % 60,
+    seconds: Math.trunc(ms / 1000) % 60,
+    milliseconds: Math.trunc(ms) % 1000,
+    microseconds: Math.trunc(ms * 1000) % 1000,
+    nanoseconds: Math.trunc(ms * 1e6) % 1000
+  }
+}
+
+export function getTime(ms) {
+  let now = parseMs(+new Date() - ms)
+  if (now.days) return `${now.days} days ago`
+  else if (now.hours) return `${now.hours} hours ago`
+  else if (now.minutes) return `${now.minutes} minutes ago`
+  else return `a few seconds ago`
 }

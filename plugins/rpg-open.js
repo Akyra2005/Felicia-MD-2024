@@ -28,6 +28,7 @@ const rewards = {
         emerald: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         diamond: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
         gold: [0, 1, 0, 0, 0, 0, 0, 0, 0],
+        crystal: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
         iron: [0, 1, 0, 0, 0, 0, 0, 0],
         common: [0, 1, 0, 0, 0, 0],
         uncommon: [0, 1, 0, 0, 0, 0, 0, 0],
@@ -46,6 +47,7 @@ const rewards = {
         emerald: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
         diamond: [0, 1, 0, 0, 0, 0, 0, 0, 0],
         gold: [0, 1, 0, 0, 0, 0, 0, 0],
+        crystal: [0, 1, 0, 0, 0, 0, 0, 0, 0],
         iron: [0, 1, 0, 0, 0, 0, 0],
         common: [0, 1, 0, 0],
         uncommon: [0, 1, 0, 0, 0, 0],
@@ -55,10 +57,7 @@ const rewards = {
         wood: [0, 1, 0, 0],
         rock: [0, 1, 0, 0],
         string: [0, 1, 0, 0]
-     },
-    limit: {
-        potion: [0, 1, 2, 3, 4]
-    },
+     }
     // pet: {
     //     petFood: [0, 1, 0, 0, 0],
     //     anjing: [],
@@ -68,12 +67,12 @@ let handler = async (m, { command, args, usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let listCrate = Object.fromEntries(Object.entries(rewards).filter(([v]) => v && v in user))
     let info = `
-GACHA MYSTERY CRATE
+*GACHA MYSTERY CRATE*
 
 Format: ${usedPrefix}${command} crate count
 Contoh: ${usedPrefix}${command} common 10
 
-List Of Crate:
+*List Of Crate:*
 ${Object.keys(listCrate).map((v) => `
 ${rpg.emoticon(v)}${v}
 `.trim()).join('\n')}

@@ -1,6 +1,6 @@
 const items = {
     buy: {
-        astralEssence: {
+        crystal: {
             money: 10
         },
         limit: {
@@ -37,7 +37,7 @@ const items = {
             money: 9000
         },
         legendary: {
-            money: 11399
+            money: 1
         },
         bibitapel: { 
         	money: 100

@@ -193,6 +193,7 @@ function reward(user = {}) {
             cumi: 20,
             orca: 20,
             udang: 20,
+            crystal: 4
         },
         lost: {
             health: 101 - user.cat * 4,

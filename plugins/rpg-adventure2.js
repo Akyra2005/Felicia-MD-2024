@@ -195,6 +195,7 @@ function reward(user = {}) {
             pisang: 10,
             wood: 10,
             drink: 10,
+            crystal: 2
         },
         lost: {
             health: 101 - user.cat * 4,

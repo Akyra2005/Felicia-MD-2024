@@ -2,13 +2,13 @@ const cooldown = 3600
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
-    if (user.health < 495) return m.reply(`
-*Dibutuhkan Setidaknya 495HP ❤️ Untuk Berpetualang*
+    if (user.health < 95) return m.reply(`
+*Dibutuhkan Setidaknya 95HP ❤️ Untuk Berpetualang*
 Beli Potion Untuk Return HP Di: *${usedPrefix}buy potion jumlah*,
 Dan Ketik *${usedPrefix}heal jumlah* Untuk Menggunakan Potion
 `.trim())
-    if (user.stamina < 495) return m.reply(`
-*Dibutuhkan Setidaknya 495ST ⚡ Untuk Berpetualang*
+    if (user.stamina < 95) return m.reply(`
+*Dibutuhkan Setidaknya 95ST ⚡ Untuk Berpetualang*
 *Cari Cara Menambah Stamina Di #stamina*
 `.trim())
 if (user.skilladventure < 4) return m.reply(`
@@ -209,7 +209,8 @@ function reward(user = {}) {
             exp: 700000,
             advenaglory: 70000,
             money: 700000,
-			diamond: 10
+			diamond: 10,
+			crystal: 5
         },
         lost: {
             health: 101 - user.cat * 4,

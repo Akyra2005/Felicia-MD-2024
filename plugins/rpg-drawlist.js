@@ -1,10 +1,9 @@
 let handler = async m => m.reply(`*DRAW*
 
 */draw1* (3 Crystal)
-- Item Limited
+- Item Bonus 900%
 
 */draw2* (1 Crystal)
-- Item Standar
 `.trim()) // Tambah sendiri kalo mau
 
 

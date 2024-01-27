@@ -188,6 +188,7 @@ function reward(user = {}) {
             paus: 5,
             kepiting: 5,
             gurita: 5,
+            crystal: 1
         },
         lost: {
             health: 101 - user.cat * 4,

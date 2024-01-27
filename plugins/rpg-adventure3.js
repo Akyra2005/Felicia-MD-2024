@@ -2,12 +2,12 @@ const cooldown = 3600000
 let handler = async (m, { usedPrefix }) => {
     let user = global.db.data.users[m.sender]
     let timers = (cooldown - (new Date - user.lastadventure))
-    if (user.health < 295) return m.reply(`
+    if (user.health < 95) return m.reply(`
 *Dibutuhkan Setidaknya 95HP ❤️ Untuk Berpetualang*
 Beli Potion Untuk Return HP Di: *${usedPrefix}buy potion jumlah*,
 Dan Ketik *${usedPrefix}heal jumlah* Untuk Menggunakan Potion
 `.trim())
-if (user.stamina < 295) return m.reply(`
+if (user.stamina < 95) return m.reply(`
 *Dibutuhkan Setidaknya 95ST ⚡ Untuk Berpetualang*
 *Cari Cara Menambah Stamina Di #stamina*
 `.trim())
@@ -191,6 +191,7 @@ function reward(user = {}) {
             lobster: 15,
             lumba: 15,
             dory: 15,
+            crystal: 3
         },
         lost: {
             health: 101 - user.cat * 4,
