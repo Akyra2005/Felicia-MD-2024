@@ -231,7 +231,7 @@ global.rpg = {
             coal: "⚱️",
             common: "📦",
             cow: "🐄",
-            crystal: "🔮",
+            crystal: "❄️",
             darkcrystal: "♠️",
             diamond: "💎",
             dog: "🐕",
@@ -314,6 +314,20 @@ global.rpg = {
             paus: "🐋",
             gurita: "🐙",
             skill: "⚔️",
+            
+            vitalityLevel: "🔮",
+            elixirLevel: "🔮",
+            tiger: "🐅",
+            tiketcoin: "🎟️",
+            trash: "🗑",
+            umpan: "🪱",
+            uncommon: "🎁",
+            pengeluaran: "💸",
+            upgrader: "🧰",
+            paus: "🐋",
+            gurita: "🐙",
+            skill: "⚔️",
+            
             wood: "🪵"            
         }
         let results = Object.keys(emot).map(v => [v, new RegExp(v, "gi")]).filter(v => v[1].test(string))

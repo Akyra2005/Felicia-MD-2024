@@ -227,6 +227,9 @@ export async function handler(chatUpdate) {
                 if (!isNumber(user.dragonexp)) user.dragonexp = 0
                 if (!isNumber(user.dragonlastfeed)) user.dragonlastfeed = 0
                 if (!isNumber(user.emas)) user.emas = 0
+                if (!isNumber(user.elixirLevel)) user.elixirLevel = 0
+                if (!isNumber(user.vitalityLevel)) user.vitalityLevel = 0
+                if (!isNumber(user.esens)) user.esens = 0
                 if (!isNumber(user.emerald)) user.emerald = 0
                 if (!isNumber(user.enchant)) user.enchant = 0
                 if (!isNumber(user.esteh)) user.esteh = 0
@@ -733,6 +736,9 @@ if (!('nickname' in user)) user.nickname = ''
                     dragonexp: 0,
                     dragonlastfeed: 0,
                     emas: 0,
+                    elixirLevel: 0,
+                    vitalityLevel: 0,
+                    esens: 0,
                     emerald: 0,
                     esteh: 0,
                     exp: 0,
