@@ -1,16 +1,30 @@
+function calculateMaxHealth(elixirLevel) {
+    switch (elixirLevel) {
+        case 1:
+            return 100;
+        case 2:
+            return 150;
+        case 3:
+            return 200;
+        case 4:
+            return 250;
+        default:
+            return 100;
+    }
+}
 let handler = async (m, { args, usedPrefix }) => {
     let user = global.db.data.users[m.sender]
 
-    // variabel untuk menyimpan level Vitality
-    const vitalityLevel = user.vitalityLevel !== undefined ? Math.max(0, user.vitalityLevel) : 0;
+    // variabel untuk menyimpan level Elixir of Life
+const elixirLevel = user.elixirLevel !== undefined ? Math.max(0, user.elixirLevel) : 0;
 
-    const maxHealth = calculateMaxHealth(vitalityLevel) // maksimum health yang bisa dimiliki sesuai dengan level Vitality
+    const maxHealth = calculateMaxHealth(elixirLevel) // maksimum health yang bisa dimiliki sesuai dengan level elixir
 
     if (user.health >= maxHealth) {
         return m.reply(`*Health Kamu Sudah Maksimum.*`.trim())
     }
 
-    const potionsNeeded = Math.ceil((maxHealth - user.health) / healPerPotion(vitalityLevel)) // jumlah potion yang dibutuhkan
+    const potionsNeeded = Math.ceil((maxHealth - user.health) / healPerpotion(elixirLevel)) // jumlah potion yang dibutuhkan
     const potionsAvailable = user.potion // jumlah potion yang tersedia
 
     if (potionsAvailable < potionsNeeded) {
@@ -19,7 +33,7 @@ let handler = async (m, { args, usedPrefix }) => {
     }
 
     user.potion -= potionsNeeded // kurangi jumlah potion yang tersedia
-    user.health += potionsNeeded * healPerPotion(vitalityLevel) // tambahkan jumlah health sesuai dengan jumlah potion yang dikonsumsi
+    user.health += potionsNeeded * healPerpotion(elixirLevel) // tambahkan jumlah health sesuai dengan jumlah potion yang dikonsumsi
 
     // pastikan health tidak melebihi maksimum
     if (user.health > maxHealth) {
@@ -31,41 +45,48 @@ let handler = async (m, { args, usedPrefix }) => {
 }
 
 // fungsi untuk menghitung jumlah health yang diisi per satu potion
-function healPerPotion(vitalityLevel) {
+function healPerpotion(elixirLevel, vitalityLevel) {
+    // Mendapatkan persentase bonus heal sesuai dengan level Vitality
+    let bonusPercentage = 0;
     switch (vitalityLevel) {
         case 1:
-            return 0.1 // Bonus heal sesuai dengan level Vitality
+            bonusPercentage = 0.1;
+            break;
         case 2:
-            return 0.5
+            bonusPercentage = 0.5;
+            break;
         case 3:
-            return 1
+            bonusPercentage = 1;
+            break;
         case 4:
-            return 1.5
+            bonusPercentage = 1.5;
+            break;
         case 5:
-            return 2
+            bonusPercentage = 2;
+            break;
         default:
-            return 0
+            bonusPercentage = 0;
+    }
+
+    // Menghitung jumlah kesehatan yang diisi sesuai dengan level elixir dan bonus heal dari Vitality
+    let baseHeal = 50; // Jumlah kesehatan yang diisi per satu potion tanpa bonus
+    let totalHeal = baseHeal * (1 + bonusPercentage); // Total kesehatan yang diisi per satu potion termasuk bonus
+
+    switch (elixirLevel) {
+        case 1:
+            return totalHeal;
+        case 2:
+            return totalHeal;
+        case 3:
+            return totalHeal;
+        case 4:
+            return totalHeal;
+        default:
+            return totalHeal;
     }
 }
 
-// fungsi untuk menghitung maksimum health yang bisa dimiliki sesuai dengan level Vitality
-function calculateMaxHealth(vitalityLevel) {
-    // Sesuaikan nilai maksimum health sesuai dengan level Vitality
-    switch (vitalityLevel) {
-        case 1:
-            return 250
-        case 2:
-            return 300
-        case 3:
-            return 350
-        case 4:
-            return 400
-        case 5:
-            return 450
-        default:
-            return 200
-    }
-}
+
 
 handler.help = ['potion','heal']
 handler.tags = ['rpg']

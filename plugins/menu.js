@@ -58,9 +58,7 @@ before: `*Hai Saya Adalah Felicia-MD*
 ╰ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
 
 ╭ ⎔ ━─━─━─━─━─━─━─━─━─━─━─━─━❐
-│    *Top 3 Fitur Sering Digunakan*
-│
-${txt}
+│      *Bot Gratis Ditambahkan Ke Grup*
 ╰ ⎔ ━─━─━─━─━─━─━─━─━─━━❐
 `,
 }

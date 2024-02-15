@@ -1,4 +1,3 @@
-
 const inventory = {
   others: {
     health: true,
@@ -237,7 +236,7 @@ const caption = `
 🎖️ Rank Hunter: ${user.rank}
 👑 Title: ${user.title}
 🛡️ Perisai: ${user.lastperisai == 0 ? 'Non-Aktif' : 'Aktif'}
-🚗 Mobil: Beli Di .buycar
+🌙 Nickname: ${user.nickname}
 ${Object.keys(inventory.others).map(v => user[v] && `${global.rpg.emoticon(v)} ${v}: ${user[v]}`).filter(v => v).join('\n')}${tools ? `
 TOOLS
 ${tools}` : ''}${dura ? `
@@ -282,8 +281,6 @@ Total Crates: ${Object.keys(inventory.crates).map(v => user[v]).reduce((a, b) =>
 
 PETS
 ${pets ? pets + '\n' : ''}${user.petFood ? '🍖 Peetfood: ' + user.petFood : ''}
-
-🌙 Nickname: ${user.nickname}
 `.trim() : ''}
 `;
 

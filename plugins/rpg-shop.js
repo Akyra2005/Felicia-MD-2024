@@ -1,7 +1,7 @@
 const items = {
     buy: {
         crystal: {
-            money: 10
+            money: Infinity
         },
         limit: {
             money: 6221
@@ -37,7 +37,7 @@ const items = {
             money: 9000
         },
         legendary: {
-            money: 1
+            money: 12000
         },
         bibitapel: { 
         	money: 100

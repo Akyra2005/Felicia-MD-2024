@@ -1,7 +1,7 @@
 let gachaVitality = async (m, { args, usedPrefix }) => {
     let user = global.db.data.users[m.sender]
 
-    const crystalNeeded = 10 // jumlah crystal yang dibutuhkan untuk 1x gacha
+    const crystalNeeded = 4 // jumlah crystal yang dibutuhkan untuk 1x gacha
     let gachaCount = parseInt(args[0]) || 1 // jumlah gacha yang akan dilakukan, defaultnya 1
 
     // Cek apakah gachaCount merupakan nilai yang valid (hanya 1 sampai 10)
